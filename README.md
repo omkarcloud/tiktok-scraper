@@ -436,6 +436,8 @@ GET https://tiktok-scraper.omkar.cloud/tiktok/videos/search
 | `market` | No | `us` | Two-letter region code. |
 | `max_results` | No | `10` | Number of results (max 30). |
 | `page_cursor` | No | `0` | Pagination cursor from a previous response. |
+| `sort_by` | No | `relevance` | Sort order: `relevance`, `most_liked`, `latest`. |
+| `publish_time` | No | `all` | Publish time filter: `all`, `past_24_hours`, `this_week`, `this_month`, `last_3_months`, `last_6_months`. |
 
 #### Example
 
@@ -543,7 +545,7 @@ elif response.status_code == 429:
 
 **User Videos** returns a paginated list of a user's posted videos with full metadata.
 
-**Video Search** returns videos matching a keyword, with full video data and pagination.
+**Video Search** returns videos matching a keyword, with full video data and pagination. Supports sorting by relevance, likes, or date, and filtering by publish time.
 
 All in structured JSON. Ready to use in your app.
 

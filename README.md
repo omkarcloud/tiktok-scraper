@@ -2,7 +2,7 @@
 
 # TikTok Scraper API
 
-Get TikTok video details with download URLs (HD + watermark-free), user profiles, trending feeds, and search results via a simple REST API. 200 free requests/month.
+Get TikTok video details with download URLs (HD + watermark-free), user profiles, trending feeds, and search results via a simple REST API. 50 free requests/month.
 
 ## Key Features
 
@@ -12,7 +12,7 @@ Get TikTok video details with download URLs (HD + watermark-free), user profiles
 - Fetch any user's video history with pagination
 - Search TikTok videos by keyword
 - 30+ data points per video
-- **200 requests/month on free tier**
+- **50 requests/month on free tier**
 - Example Response:
 ```json
 {
@@ -48,7 +48,7 @@ Get TikTok video details with download URLs (HD + watermark-free), user profiles
 
 Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect=/api-key) to get your API key.
 
-It takes just 2 minutes to sign up. You get 200 free requests every month for detailed TikTok data.
+It takes just 2 minutes to sign up. You get 50 free requests every month for detailed TikTok data.
 
 This is a well built product, and your search for the best TikTok Scraper API ends right here.
 
@@ -571,9 +571,9 @@ Pass any two-letter country code as the `market` parameter. The Trending Feed an
 
 | Plan | Price | Requests/Month |
 |------|-------|----------------|
-| Free | $0 | 200 |
+| Free | $0 | 50 |
 | Starter | $16 | 15,000 |
-| Growth | $48 | 75,000 |
+| Grow | $48 | 75,000 |
 | Scale | $148 | 300,000 |
 
 ## Questions? We have answers.

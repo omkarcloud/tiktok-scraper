@@ -52,6 +52,11 @@ It takes just 2 minutes to sign up. You get 100 free requests every month for de
 
 This is a well built product, and your search for the best TikTok Scraper API ends right here.
 
+## ▶️ Video Tutorial
+
+Watch the complete API walkthrough:
+
+[![TikTok Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/tiktok-scraper/master/tiktok-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=f4cStah53u8)
 
 ## Quick Start
 

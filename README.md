@@ -42,6 +42,12 @@ Get TikTok video details with download URLs (HD + watermark-free), user profiles
 }
 ```
 
+## ▶️ Video Tutorial
+
+Watch the complete API walkthrough:
+
+[![TikTok Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/tiktok-scraper/master/tiktok-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=f4cStah53u8)
+
 ## Get API Key
 
 Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect=/api-key) to get your API key.
@@ -49,12 +55,6 @@ Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect
 It takes just 2 minutes to sign up. You get 100 free requests every month for detailed TikTok data.
 
 This is a well built product, and your search for the best TikTok Scraper API ends right here.
-
-## ▶️ Video Tutorial
-
-Watch the complete API walkthrough:
-
-[![TikTok Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/tiktok-scraper/master/tiktok-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=f4cStah53u8)
 
 ## Quick Start
 

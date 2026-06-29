@@ -1,5 +1,3 @@
-![TikTok Scraper Featured Image](https://raw.githubusercontent.com/omkarcloud/tiktok-scraper/master/tiktok-scraper-featured-image.png)
-
 # TikTok Scraper API
 
 Get TikTok video details with download URLs (HD + watermark-free), user profiles, trending feeds, and search results via a simple REST API. 100 free requests/month.

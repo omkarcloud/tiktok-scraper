@@ -1,0 +1,309 @@
+{
+ "sug_list": [
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nascar",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "593906677244414377",
+    "words_position": 0,
+    "words_content": "nascar",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nascar\"]",
+    "is_personalized": "1",
+    "lang": "sm",
+    "recall_reason": "tiktok_orion_ecom|tiktok_orion_query|tiktok_index_active_7d_query|tiktok_index_experience_decision_query|tiktok_experience_orion_query|tiktok_orion_search_session|tiktok_index_global_local_service_geointent_us_query|darwin_session_qq_14d_recall|tiktok_index_global_active_7d_query"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nasal strips",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "811132370807842855",
+    "words_position": 1,
+    "words_content": "nasal strips",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nasal\",\"strips\"]",
+    "is_history_sug": "0",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_index_active_7d_query|tiktok_index_experience_decision_query|tiktok_orion_query|darwin_session_qq_14d_recall|tiktok_orion_search_session|tiktok_experience_orion_query|tiktok_orion_sug_ecom_merged_outside_mall|tiktok_orion_ecom"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nasal inhaler stick",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "9028521425741289431",
+    "words_position": 2,
+    "words_content": "nasal inhaler stick",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nasal\",\"in\",\"haler\",\"stick\"]",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_orion_sug_ecom_merged_outside_mall|tiktok_orion_ecom"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nasal sticks",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "6606529507753815775",
+    "words_position": 3,
+    "words_content": "nasal sticks",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nasal\",\"sticks\"]",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_orion_ecom|tiktok_orion_sug_ecom_merged_outside_mall"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nashville",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "4310219264506373408",
+    "words_position": 4,
+    "words_content": "nashville",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nashville\"]",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_index_active_7d_query|tiktok_orion_query|tiktok_index_global_active_7d_query|tiktok_index_experience_decision_query|darwin_session_qq_14d_recall|tiktok_orion_search_session|tiktok_experience_orion_query|tiktok_index_global_local_service_query"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nashobasperspective",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "5986694639629712502",
+    "words_position": 5,
+    "words_content": "nashobasperspective",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nashobas\",\"perspective\"]",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_orion_sug_ecom_merged_outside_mall"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nascar las vegas",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "5508423833604438107",
+    "words_position": 6,
+    "words_content": "nascar las vegas",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nascar\",\"las\",\"vegas\"]",
+    "is_personalized": "1",
+    "lang": "en",
+    "recall_reason": "tiktok_index_global_active_7d_query|tiktok_index_active_7d_query|darwin_session_qq_14d_recall|tiktok_index_global_local_service_query"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nasmaat lattafa",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "2918681536763066092",
+    "words_position": 7,
+    "words_content": "nasmaat lattafa",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nas\",\"maat\",\"lattafa\"]",
+    "is_personalized": "1",
+    "lang": "tr",
+    "recall_reason": "tiktok_orion_query|tiktok_orion_search_session|tiktok_experience_orion_query|tiktok_orion_sug_ecom_merged_outside_mall"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nascar",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "593906677244414377",
+    "words_position": 8,
+    "words_content": "nascar",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nascar\"]",
+    "is_personalized": "1",
+    "is_rich_sug": "1",
+    "is_verified": true,
+    "lang": "sm",
+    "nickname": "nascar",
+    "recall_reason": "tiktok_orion_ecom|tiktok_orion_query|tiktok_index_active_7d_query|tiktok_index_experience_decision_query|tiktok_experience_orion_query|tiktok_orion_search_session|tiktok_index_global_local_service_geointent_us_query|darwin_session_qq_14d_recall|tiktok_index_global_active_7d_query",
+    "relation_type": "",
+    "rich_sug_avatar_uri": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/f1e19884f4ba79e773dc4e8bf15a356a~tplv-tiktokx-cropcenter:300:300.webp?dr=9638&refresh_token=c24b04f1&x-expires=1791378000&x-signature=RlMpmtl5IOwtO3bedn3F0YeQSZ8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=c1333099&idc=useast5",
+    "rich_sug_nickname": "nascar",
+    "rich_sug_type": "1",
+    "rich_sug_user_type": "1",
+    "sug_sec_user_id": "MS4wLjABAAAA6D4mhkcbZCp0M9ljSYislpFkYP9c-Cq7kCNfSjow17wNKGub67DCBE7b59gzFZ8d",
+    "sug_uniq_id": "nascar",
+    "sug_user_id": "6727954652409709574",
+    "unique_id": "nascar"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nas",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "131206070321299527",
+    "words_position": 9,
+    "words_content": "nas",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nas\"]",
+    "is_personalized": "1",
+    "is_rich_sug": "1",
+    "is_verified": false,
+    "lang": "gl",
+    "nickname": "nas",
+    "recall_reason": "darwin_session_qq_14d_recall|tiktok_index_active_7d_query|tiktok_orion_query|tiktok_index_global_active_7d_query|tiktok_orion_search_session|origin_query",
+    "relation_type": "",
+    "rich_sug_avatar_uri": "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/f3dc369ce3d75cf66cddcbbb7ae0eb8f~tplv-tiktokx-cropcenter:300:300.webp?dr=9638&refresh_token=46983ad5&x-expires=1791378000&x-signature=hPowy875CaToZnIWYQVI67T0cpg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=c1333099&idc=useast5",
+    "rich_sug_nickname": "nas",
+    "rich_sug_type": "1",
+    "rich_sug_user_type": "-1",
+    "sug_sec_user_id": "MS4wLjABAAAAB17KfykFZE13p70p8wRQSmdQBmssMdw4QYhWXA_LZE-oT0KPdnxnNklxYQDV-RbG",
+    "sug_uniq_id": "heavyalcohol",
+    "sug_user_id": "7016758126188413957",
+    "unique_id": "heavyalcohol"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  },
+  {
+   "pos": [
+    {
+     "begin": 0,
+     "end": 2
+    }
+   ],
+   "content": "nasfromthegram",
+   "sug_type": "",
+   "word_record": {
+    "group_id": "8126802394656883432",
+    "words_position": 10,
+    "words_content": "nasfromthegram",
+    "words_source": "sug"
+   },
+   "extra_info": {
+    "cut_query": "[\"nas\",\"from\",\"the\",\"gram\"]",
+    "is_personalized": "1",
+    "is_rich_sug": "1",
+    "is_verified": false,
+    "lang": "ja",
+    "nickname": "NasFromTheGram⛴️💫",
+    "recall_reason": "tiktok_index_active_7d_query|darwin_session_qq_14d_recall|tiktok_index_global_active_7d_query|tiktok_orion_search_session|tiktok_orion_query",
+    "relation_type": "",
+    "rich_sug_avatar_uri": "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/0c2a169cd437367e62a283b908757962~tplv-tiktokx-cropcenter:300:300.webp?dr=9638&refresh_token=db2ff9cb&x-expires=1791378000&x-signature=O0i7Iwe6n3Q6okxyCTYcPWCQlfQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=c1333099&idc=useast5",
+    "rich_sug_nickname": "NasFromTheGram⛴️💫",
+    "rich_sug_type": "1",
+    "rich_sug_user_type": "-1",
+    "sug_sec_user_id": "MS4wLjABAAAAPPEikpRk3XqgZFR1ZcvlsAnbwo1pLYyngli4l2Pe8eyQyoZyid_qrp3Guh8j3pMH",
+    "sug_uniq_id": "nasfromthegram",
+    "sug_user_id": "6804498947541861382",
+    "unique_id": "nasfromthegram"
+   },
+   "rich_sug_sec_pos": null,
+   "highlight_pos": null
+  }
+ ],
+ "status_code": 0,
+ "status_msg": "",
+ "rid": "2026100513331905F97879E9A58BE3E899",
+ "user_input_query": "nas"
+}

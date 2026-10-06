@@ -1,0 +1,25 @@
+{
+ "collectionList": [
+  {
+   "collectionId": "7394627756635573022",
+   "cover": {
+    "urlList": [
+     "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/d71c5a45982a4fde9ef046df412d308b_1707411879~tplv-tiktokx-origin.image?dr=9636&x-expires=1791378000&x-signature=b58L0qbEaVONnCBNnywEdcMlslc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+     "https://p19-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/d71c5a45982a4fde9ef046df412d308b_1707411879~tplv-tiktokx-origin.image?dr=9636&x-expires=1791378000&x-signature=noKEU3J68Ba18MEUHUj7OfLwjf0%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+     "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-p-0037-euttp/d71c5a45982a4fde9ef046df412d308b_1707411879~tplv-tiktokx-origin.jpeg?dr=9636&x-expires=1791378000&x-signature=m7Rhc69OcoUgpMF2Iq85dUYHFYw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+    ]
+   },
+   "name": "Summer of Sports",
+   "status": 3,
+   "total": "139",
+   "userId": "107955",
+   "userName": "tiktok"
+  }
+ ],
+ "cursor": "1",
+ "hasMore": false,
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": "",
+ "total": 1
+}

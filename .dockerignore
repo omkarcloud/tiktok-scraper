@@ -1,0 +1,15 @@
+content/
+rapidapi_updater/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.env
+.venv
+env/
+venv/
+
+/output/
+/debug/
+**/.DS_Store

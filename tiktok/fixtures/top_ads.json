@@ -1,0 +1,67 @@
+{
+ "code": 0,
+ "msg": "OK",
+ "request_id": "20261005185631D3F14BDD011C31F0BF42",
+ "data": {
+  "materials": [
+   {
+    "ad_title": "Discover the world of Emiriah perfumes. Find the fragrance that speaks to you.",
+    "brand_name": "",
+    "cost": 0,
+    "ctr": 0.81,
+    "favorite": false,
+    "id": "7686346996722745360",
+    "industry_key": "label_14106000000",
+    "is_search": true,
+    "like": 71,
+    "objective_key": "campaign_objective_conversion",
+    "video_info": {
+     "vid": "v14033g50000dam2prvog65jpmo877t0",
+     "duration": 18.8,
+     "cover": "https://p19-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/oke2BEfDUInuNHqDmWW0FrPCYBdAmEztFBmvQg~tplv-noop.image?dr=18692&refresh_token=d7610004&x-expires=1791219409&x-signature=CUDRgOUMHbIbuA26FusG6dhrY3w%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=317596d8&idc=my&VideoID=v14033g50000dam2prvog65jpmo877t0",
+     "video_url": {
+      "1080p": "https://v16m-default.tiktokcdn.com/c17f872d8e32361724784c26224f314d/6ac3d6d1/video/tos/alisg/tos-alisg-ve-0051c001-sg/oYWAHABSiGD6VZr2cmUOAABBo4GIEoQfw1biTi/?a=0&bti=NTU4QDM1NGA%3D&&bt=2787&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=ODQ4PDo0MzhkO2VnZGQ8NEBpMzo7cG05cnU1ZDMzODYzNEBeNjFfXjYvNmAxL142LTVgYSNxNGxtMmRzbWphLS1kMDFzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b8000",
+      "360p": "https://v16m-default.tiktokcdn.com/b8b0096a6961eb2431d6d9ba383c1e52/6ac3d6d1/video/tos/alisg/tos-alisg-ve-0051c001-sg/okCIgExgNPMQqAxfWjcqN2fTEG1DDBF1QR0BzC/?a=0&bti=NTU4QDM1NGA%3D&&bt=535&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=ZGQ8NThmNDxmaTZnZGhoZ0BpMzo7cG05cnU1ZDMzODYzNEAtYGEzYTU2X18xYS82MjZfYSNxNGxtMmRzbWphLS1kMDFzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b8000",
+      "480p": "https://v16m-default.tiktokcdn.com/cd6edeff40db0276a1238dedaf602c2c/6ac3d6d1/video/tos/alisg/tos-alisg-ve-0051c001-sg/ogwbfqQEQekYAX81IAAAwAGHfrOrFxMFMie82Z/?a=0&bti=NTU4QDM1NGA%3D&&bt=784&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=OzU3Z2c4OzlmaTs4NzQ1OUBpMzo7cG05cnU1ZDMzODYzNEAyXjIvYGEzXl8xMWFeNGExYSNxNGxtMmRzbWphLS1kMDFzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b8000",
+      "540p": "https://v16m-default.tiktokcdn.com/6d7b123fecadc763d7054452ceb1757a/6ac3d6d1/video/tos/alisg/tos-alisg-ve-0051c001-sg/oMEfWACS2QgvMEIqlqFfBBgJGxZ9PcQRNEDxD1/?a=0&bti=NTU4QDM1NGA%3D&&bt=1061&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=OztkZGU0PDg0NjU2ODZlNEBpMzo7cG05cnU1ZDMzODYzNEAuXjFiNDVeNjIxYV9eXi0yYSNxNGxtMmRzbWphLS1kMDFzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b8000",
+      "720p": "https://v16m-default.tiktokcdn.com/7f621d2147667943957f86e1e10ec0ae/6ac3d6d1/video/tos/alisg/tos-alisg-ve-0051c001-sg/osfMW31ABgBE2CgRxbDGQqIfqQGPixNK2FcD1E/?a=0&bti=NTU4QDM1NGA%3D&&bt=1474&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=OTU8NWgzOTU0M2Y1Mzo2aEBpMzo7cG05cnU1ZDMzODYzNEBgL2NhMTMxX2AxLTAzXzQ1YSNxNGxtMmRzbWphLS1kMDFzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b8000"
+     },
+     "width": 720,
+     "height": 1280
+    }
+   },
+   {
+    "ad_title": "hi",
+    "brand_name": "",
+    "cost": 1,
+    "ctr": 0.9,
+    "favorite": false,
+    "id": "7683129200564174869",
+    "industry_key": "label_23125000000",
+    "is_search": true,
+    "like": 373356,
+    "objective_key": "campaign_objective_video_view",
+    "video_info": {
+     "vid": "v1c033g50000daqv187og65jj006vgj0",
+     "duration": 8.638,
+     "cover": "https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0051c001-sg/okAAPAEDXrmiaKoBwY8yBzmmIPkz1BvOwAvXi~tplv-noop.image?dr=18692&refresh_token=c70497a1&x-expires=1791219399&x-signature=pmAQzaTLd98bJcgYpfZYkYlJhPA%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=317596d8&idc=my&VideoID=v1c033g50000daqv187og65jj006vgj0",
+     "video_url": {
+      "1080p": "https://v16m-default.tiktokcdn.com/9148bf74694c6ce21262e785200b3890/6ac3d6c7/video/tos/alisg/tos-alisg-ve-0051c001-sg/o0mLoZKqgStAZrSpfeTPfRe0U2G6yGZvfAIAAM/?a=0&bti=NTU4QDM1NGA%3D&&bt=4291&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=ZGloNGZpaTRoaTk5Ojk4O0BpM2o5M205cjt5ZDMzODYzNEBgYzUwNDEyNjAxNi4xNi41YSNncy1nMmQ0Lm5hLS1kMGBzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b0000",
+      "360p": "https://v16m-default.tiktokcdn.com/3a91b7eef360d18a8b9fd745dc33a560/6ac3d6c7/video/tos/alisg/tos-alisg-ve-0051c001-sg/okfVCfSvE0aFVk9APAwQPUnxbV5aDDTpGf1ITg/?a=0&bti=NTU4QDM1NGA%3D&&bt=585&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=MzxkZmY3NGhkPDY5aTtmPEBpM2o5M205cjt5ZDMzODYzNEBeYDZhY2EwNjYxNjEvYGMyYSNncy1nMmQ0Lm5hLS1kMGBzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b0000",
+      "480p": "https://v16m-default.tiktokcdn.com/824faa55c3ad424da925f03483dd3206/6ac3d6c7/video/tos/alisg/tos-alisg-ve-0051c001-sg/oUA2qIe0UM5s9mpTAGKcEvafLfrgAQetaZyPfo/?a=0&bti=NTU4QDM1NGA%3D&&bt=944&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=Ozg2aWUzZjU0aDU3MzpnNkBpM2o5M205cjt5ZDMzODYzNEBhXjIuLi41NS4xX18xYV8uYSNncy1nMmQ0Lm5hLS1kMGBzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b0000",
+      "540p": "https://v16m-default.tiktokcdn.com/4f17dc21bcd0f97630187e604c13fb29/6ac3d6c7/video/tos/alisg/tos-alisg-ve-0051c001-sg/oQQfIgD5b9aPAyDVnF04fT25UVpG0ECAgVfaC1/?a=0&bti=NTU4QDM1NGA%3D&&bt=1376&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=ODxpOjU1ZjU3NWRpZDRoaEBpM2o5M205cjt5ZDMzODYzNEA0YS9fYmJjXzExXmAvNi8uYSNncy1nMmQ0Lm5hLS1kMGBzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b0000",
+      "720p": "https://v16m-default.tiktokcdn.com/b7170e3be04ead393e44efacf54d3355/6ac3d6c7/video/tos/alisg/tos-alisg-ve-0051c001-sg/oQfaf20ADgCE2VAnpgDTgVIaPQEVO9bofFUGU5/?a=0&bti=NTU4QDM1NGA%3D&&bt=2299&ft=cApXJCz7ThWHzQfnLGZmo0P&mime_type=video_mp4&rc=NTRnZ2c5NzgzN2g2aTszOEBpM2o5M205cjt5ZDMzODYzNEA0MjViMy5jNWMxX15eNWJhYSNncy1nMmQ0Lm5hLS1kMGBzcw%3D%3D&vvpl=1&l=20261005185631D3F14BDD011C31F0BF42&btag=e000b0000"
+     },
+     "width": 720,
+     "height": 1280
+    }
+   }
+  ],
+  "pagination": {
+   "has_more": true,
+   "page": 1,
+   "size": 20,
+   "total_count": 136
+  }
+ }
+}

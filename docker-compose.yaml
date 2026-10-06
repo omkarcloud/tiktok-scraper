@@ -1,0 +1,10 @@
+services:
+  tiktok-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Optional — only if TikTok is blocked where you run, or at high volume.
+      # - TIKTOK_PROXY=http://user:pass@host:port

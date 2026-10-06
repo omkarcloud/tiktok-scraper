@@ -1,0 +1,47 @@
+{
+ "shareMeta": {
+  "desc": "7.2m videos - Watch awesome short videos created with Makeup Lush",
+  "title": "Makeup Lush on TikTok"
+ },
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": "",
+ "stickerInfo": {
+  "author": {
+   "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/7314312628120059937~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=712436d6&x-expires=1791378000&x-signature=yiJVNZ0w8ND2NAE6avR%2BpaS6fmE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=b59d6b55&idc=useast8",
+   "avatarMedium": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/7314312628120059937~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=34b48d62&x-expires=1791378000&x-signature=PQuAKtrGBdj5Mt6N0IDOE5YJBFg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=b59d6b55&idc=useast8",
+   "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/7314312628120059937~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=e038fbcf&x-expires=1791378000&x-signature=rpPx8MjghebdEnP%2BA0v7NeVXwq8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=b59d6b55&idc=useast8",
+   "commentSetting": 0,
+   "downloadSetting": 0,
+   "duetSetting": 0,
+   "ftc": false,
+   "id": "6777469001737978882",
+   "isADVirtual": false,
+   "nickname": "Mas Kuntoo",
+   "openFavorite": false,
+   "privateAccount": false,
+   "relation": 0,
+   "secUid": "MS4wLjABAAAAfMgvQhL_r2_64vN15CbmYYlUZD0XdG3IwE5OK2xaRGjrNyC_QSMF8HMtML9rkvPt",
+   "secret": false,
+   "signature": "🛋️ Essentials Room\nroom decor • tech • unboxing\nJasa pembuatan filter tiktok :\nkendala ongkir cek disini ⬇️",
+   "stitchSetting": 0,
+   "ttSeller": false,
+   "uniqueId": "mzkunnn",
+   "verified": false
+  },
+  "sticker": {
+   "coverUrls": {
+    "urlList": [
+     "https://lf16-effectcdn-us.tiktokcdn-us.com/obj/tiktok-loki-effect-oracle-tx/df4ab49f0f8d4fef1701be00ee046763",
+     "https://lf19-effectcdn-us.tiktokcdn-us.com/obj/tiktok-loki-effect-oracle-tx/df4ab49f0f8d4fef1701be00ee046763"
+    ]
+   },
+   "desc": "",
+   "id": "3390122645",
+   "name": "Makeup Lush",
+   "stickerStats": {
+    "useCount": 7200000
+   }
+  }
+ }
+}

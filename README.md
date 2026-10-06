@@ -1,588 +1,162 @@
-# TikTok Scraper API
+# 🎵 TikTok Scraper
 
-Get TikTok video details with download URLs (HD + watermark-free), user profiles, trending feeds, and search results via a simple REST API. 100 free requests/month.
+TikTok Scraper is a **free and open-source** scraper that gets you **unlimited** detailed TikTok data for free.
 
-## Key Features
+## ✨ What Can I Get?
 
-- Get video details with direct MP4 download links (standard, watermarked, HD)
-- Pull user profiles with follower stats, bio, linked socials, and verification status
-- Browse trending videos by region
-- Fetch any user's video history with pagination
-- Search TikTok videos by keyword
-- 30+ data points per video
-- **100 requests/month on free tier**
-- Example Response:
+- 🎬 **Full details on any video** — play / like / comment / share counts, every MP4 quality, sound, hashtags & captions
+- 👤 **Profiles, videos & followers of 1B+ users** — bio, follower counts, latest / popular videos, playlists
+- 🔍 **Search videos, users, hashtags, sounds & live streams** — plus trending and Explore feeds for any country
+- 📢 **Ads intelligence** — TikTok's EU/UK ad library with targeting & reach, and Creative Center's top ads
+
+## 🎥 Example: A Full TikTok Video
+
 ```json
 {
-  "video_id": "7577398554101058824",
-  "region": "NP",
-  "caption": "#fyp #foryoupage #shinchan #dontletthisflop #viral",
-  "created_at": 1764250588,
-  "duration_seconds": 11,
-  "author": {
-    "user_id": "7277886691518465026",
-    "handle": "giaerra",
-    "display_name": "gītaa^̲̲̲",
-    "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/..."
+  "id": "7692114317151423775",
+  "link": "https://www.tiktok.com/@tiktok/video/7692114317151423775",
+  "type": "video",
+  "description": "ATEEZ on the FYF. BTS on tour. dance challenges on repeat. @rachelszero and friends reminisce on K-Pop Summer on TikTok",
+  "language": "en",
+  "created_at": "2026-10-02T16:52:37Z",
+  "is_ad": false,
+  "stats": { "play_count": 279100, "like_count": 4696, "comment_count": 2041, "share_count": 457, "save_count": 438, "repost_count": 0 },
+  "author": { "id": "107955", "username": "tiktok", "nickname": "TikTok", "link": "https://www.tiktok.com/@tiktok", "is_verified": true },
+  "author_stats": { "follower_count": 96100000, "like_count": 465100000, "video_count": 1510 },
+  "music": { "id": "7692114426937346847", "title": "original sound", "author_name": "TikTok", "duration_seconds": 65, "play_link": "https://v16m.tiktokcdn-us.com/..." },
+  "video": {
+    "duration_seconds": 65,
+    "width": 720,
+    "height": 1280,
+    "cover": "https://p19-common-sign.tiktokcdn-us.com/...",
+    "play_link": "https://www.tiktok.com/aweme/v1/play/?...",
+    "qualities": [
+      { "quality": "1080p", "codec": "h265_hvc1", "width": 1080, "height": 1920, "play_link": "https://www.tiktok.com/aweme/v1/play/?..." },
+      { "quality": "720p", "codec": "h264", "width": 720, "height": 1280, "play_link": "https://www.tiktok.com/aweme/v1/play/?..." }
+    ],
+    "subtitles": [ { "language": "eng-US", "is_auto_generated": true, "format": "webvtt", "link": "https://v16m-webapp.tiktokcdn-us.com/..." } ]
   },
-  "media": {
-    "video_url": "https://v19.tiktokcdn-us.com/.../video.mp4",
-    "hd_video_url": "https://v16.tokcdn.com/.../video_hd.mp4",
-    "file_size_bytes": 784387,
-    "hd_file_size_bytes": 4552303
-  },
-  "stats": {
-    "views": 2152606,
-    "likes": 304735,
-    "comments": 728,
-    "shares": 60542,
-    "downloads": 531,
-    "saves": 22444
-  }
+  "mentions": [ { "id": "6805952240777085958", "username": "rachelszero", "link": "https://www.tiktok.com/@rachelszero" } ],
+  "suggested_searches": ["dance", "dance tiktoks", "kpop dance"]
 }
 ```
 
-## ▶️ Video Tutorial
+*Trimmed for readability.*
 
-Watch the complete API walkthrough:
+## 🚀 Unlimited Free TikTok Data — Get It in 60 Seconds
 
-[![TikTok Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/tiktok-scraper/master/tiktok-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=f4cStah53u8)
-
-## Get API Key
-
-Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect=/api-key) to get your API key.
-
-It takes just 2 minutes to sign up. You get 100 free requests every month for detailed TikTok data.
-
-This is a well built product, and your search for the best TikTok Scraper API ends right here.
-
-## Quick Start
-
+1️⃣ Clone and install:
 ```bash
-curl -X GET "https://tiktok-scraper.omkar.cloud/tiktok/videos/details?video_url=https://www.tiktok.com/@giaerra/video/7577398554101058824" \
-  -H "API-Key: YOUR_API_KEY"
+git clone https://github.com/omkarcloud/tiktok-scraper
+cd tiktok-scraper
+python -m pip install -r requirements.txt
 ```
 
-```json
-{
-  "video_id": "7577398554101058824",
-  "region": "NP",
-  "caption": "#fyp #foryoupage #shinchan #dontletthisflop #viral",
-  "created_at": 1764250588,
-  "duration_seconds": 11,
-  "author": {
-    "handle": "giaerra",
-    "display_name": "gītaa^̲̲̲"
-  },
-  "media": {
-    "video_url": "https://v19.tiktokcdn-us.com/.../video.mp4",
-    "hd_video_url": "https://v16.tokcdn.com/.../video_hd.mp4",
-    "file_size_bytes": 784387,
-    "hd_file_size_bytes": 4552303
-  },
-  "stats": {
-    "views": 2152606,
-    "likes": 304735,
-    "comments": 728,
-    "shares": 60542,
-    "downloads": 531,
-    "saves": 22444
-  }
-}
-```
-
-## Quick Start (Python)
-
+2️⃣ Start the API:
 ```bash
-pip install requests
+python run.py
 ```
 
-```python
-import requests
-
-# Get video details with download URLs
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/videos/details",
-    params={"video_url": "https://www.tiktok.com/@giaerra/video/7577398554101058824"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
+3️⃣ Get your first data:
+```bash
+curl "http://localhost:8000/videos/details?video=7692114317151423775"
 ```
-
-
-## API Reference
-
-### Video Details
-
-```
-GET https://tiktok-scraper.omkar.cloud/tiktok/videos/details
-```
-
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `video_url` | Yes | — | TikTok video URL. |
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/videos/details",
-    params={"video_url": "https://www.tiktok.com/@giaerra/video/7577398554101058824"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
-
-#### Response
-
-<details>
-<summary>Sample Response (click to expand)</summary>
 
 ```json
 {
-  "video_id": "7577398554101058824",
-  "region": "NP",
-  "caption": "#fyp #foryoupage #shinchan #dontletthisflop #viral",
-  "created_at": 1764250588,
-  "duration_seconds": 11,
-  "author": {
-    "user_id": "7277886691518465026",
-    "handle": "giaerra",
-    "display_name": "gītaa^̲̲̲",
-    "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/..."
-  },
-  "media": {
-    "video_url": "https://v19.tiktokcdn-us.com/.../video.mp4",
-    "watermarked_video_url": "https://v19.tiktokcdn-us.com/.../video_wm.mp4",
-    "hd_video_url": "https://v16.tokcdn.com/.../video_hd.mp4",
-    "file_size_bytes": 784387,
-    "watermarked_file_size_bytes": 0,
-    "hd_file_size_bytes": 4552303
-  },
-  "thumbnails": {
-    "cover_url": "https://p19-common-sign.tiktokcdn-us.com/.../cover.jpeg",
-    "animated_cover_url": "https://p16-common-sign.tiktokcdn-us.com/.../animated.image",
-    "original_cover_url": "https://p16-common-sign.tiktokcdn-us.com/.../original.webp"
-  },
-  "audio": {
-    "audio_id": "7468606643236883217",
-    "title": "original sound - gwyneth.paita",
-    "artist": "gwyn",
-    "play_url": "https://v16-ies-music.tiktokcdn-us.com/.../audio.mp3",
-    "cover_url": "https://p16-common-sign.tiktokcdn-us.com/.../cover.jpeg",
-    "is_original": true,
-    "duration_seconds": 25,
-    "album": null
-  },
-  "stats": {
-    "views": 2152606,
-    "likes": 304735,
-    "comments": 728,
-    "shares": 60542,
-    "downloads": 531,
-    "saves": 22444
-  },
-  "is_advertisement": false,
-  "is_pinned": false
-}
-```
-
-</details>
-
----
-
-### Trending Videos
-
-```
-GET https://tiktok-scraper.omkar.cloud/tiktok/videos/trending
-```
-
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `market` | No | `us` | Two-letter region code. |
-| `max_results` | No | `10` | Number of videos to return (max 20). |
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/videos/trending",
-    params={"market": "us", "max_results": 10},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
-
-#### Response
-
-<details>
-<summary>Sample Response (click to expand)</summary>
-
-```json
-{
-  "videos": [
-    {
-      "video_id": "7603384680255081758",
-      "region": "US",
-      "caption": "Lives in 🇺🇸USA #singlelife",
-      "created_at": 1770300964,
-      "duration_seconds": 5,
-      "author": {
-        "user_id": "7586897697803846711",
-        "handle": "leeou2011",
-        "display_name": "lejack.k",
-        "avatar_url": "https://p16-common-sign.tiktokcdn-us.com/..."
-      },
-      "media": {
-        "video_url": "https://v45.tiktokcdn-us.com/.../video.mp4",
-        "watermarked_video_url": "https://v45.tiktokcdn-us.com/.../video_wm.mp4",
-        "hd_video_url": null,
-        "file_size_bytes": 192786,
-        "watermarked_file_size_bytes": 505111,
-        "hd_file_size_bytes": null
-      },
-      "thumbnails": {
-        "cover_url": "https://p16-common-sign.tiktokcdn-us.com/.../cover.jpeg",
-        "animated_cover_url": "https://p16-common-sign.tiktokcdn-us.com/.../animated.image",
-        "original_cover_url": "https://p19-common-sign.tiktokcdn-us.com/.../original.webp"
-      },
-      "audio": {
-        "audio_id": "6774345467095451650",
-        "title": "I Need Your Love",
-        "artist": "Jake Coco & Madilyn Bailey",
-        "is_original": false,
-        "duration_seconds": 60,
-        "album": "The Covers, Vol. 6"
-      },
-      "stats": {
-        "views": 83370,
-        "likes": 3289,
-        "comments": 600,
-        "shares": 20,
-        "downloads": 44,
-        "saves": null
-      },
-      "is_advertisement": false,
-      "is_pinned": false
-    }
-  ]
-}
-```
-
-</details>
-
----
-
-### User Profile
-
-```
-GET https://tiktok-scraper.omkar.cloud/tiktok/users/profile
-```
-
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `handle` | Yes | — | TikTok username (without the `@`). |
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/users/profile",
-    params={"handle": "marvel"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
-
-#### Response
-
-<details>
-<summary>Sample Response (click to expand)</summary>
-
-```json
-{
-  "user": {
-    "user_id": "6857582733233931270",
-    "handle": "marvel",
-    "display_name": "Marvel Entertainment",
-    "bio": "Marvel social media manager",
-    "avatar_thumbnail_url": "https://p19-common-sign.tiktokcdn-us.com/.../100x100.webp",
-    "avatar_medium_url": "https://p16-common-sign.tiktokcdn-us.com/.../720x720.webp",
-    "avatar_large_url": "https://p19-common-sign.tiktokcdn-us.com/.../1080x1080.webp",
-    "is_verified": true,
-    "is_private": false,
-    "bio_link": "Marvel.com",
-    "instagram_handle": null,
-    "twitter_handle": null,
-    "youtube_channel_title": null,
-    "youtube_channel_id": null,
-    "account_created_at": 1596655540
-  },
-  "stats": {
-    "following_count": 0,
-    "follower_count": 14969237,
-    "total_likes": 207043170,
-    "video_count": 1883
+  "id": "7692114317151423775",
+  "link": "https://www.tiktok.com/@tiktok/video/7692114317151423775",
+  "type": "video",
+  "description": "ATEEZ on the FYF. BTS on tour. dance challenges on repeat. @rachelszero and friends reminisce on K-Pop Summer on TikTok",
+  "created_at": "2026-10-02T16:52:37Z",
+  "stats": { "play_count": 279100, "like_count": 4696, "comment_count": 2041, "share_count": 457, "save_count": 438, "repost_count": 0 },
+  "author": { "id": "107955", "username": "tiktok", "nickname": "TikTok", "link": "https://www.tiktok.com/@tiktok", "is_verified": true },
+  "author_stats": { "follower_count": 96100000, "like_count": 465100000, "video_count": 1510 },
+  "music": { "id": "7692114426937346847", "title": "original sound", "author_name": "TikTok", "duration_seconds": 65 },
+  "video": {
+    "duration_seconds": 65,
+    "width": 720,
+    "height": 1280,
+    "play_link": "https://www.tiktok.com/aweme/v1/play/?...",
+    "qualities": [ { "quality": "1080p", "codec": "h265_hvc1", "play_link": "https://www.tiktok.com/aweme/v1/play/?..." } ]
   }
 }
 ```
 
-</details>
+All 41 endpoints are now live at `http://localhost:8000`.
 
----
+TikTok answers plain requests from an ordinary residential IP in a country where TikTok is available, so no proxy is needed. If TikTok is blocked where you run (India, for example), set `TIKTOK_PROXY=http://user:pass@host:port` — put `{country}` in the URL where your provider takes a country code and the scraper asks each request from the country it needs (TikTok answers user search only from Europe and video search only from the US).
 
-### User Videos
+## 📚 Endpoints
 
-```
-GET https://tiktok-scraper.omkar.cloud/tiktok/users/videos
-```
+41 endpoints cover everything you need.
 
-#### Parameters
+| Endpoint | Path | Returns |
+|---|---|---|
+| Video Details | `/videos/details` | Everything about one video or photo post in a single call |
+| Video Media | `/videos/media` | Every MP4 quality, photos, covers, subtitles & the sound |
+| Video Comments / Replies | `/videos/comments`, `/videos/comment-replies` | Comments with likes, reply counts & authors, 50 per page |
+| Video Transcript | `/videos/transcript` | Captions as timed segments plus the full text |
+| Related Videos | `/videos/related` | What TikTok recommends next to a video |
+| Resolve Video | `/videos/resolve` | Any link or share link → video ID, canonical link & author |
+| User Profile | `/users/profile` | Bio, bio link, follower / like / video counts, verification, live status |
+| User Videos / Reposts | `/users/videos`, `/users/reposts` | Latest, popular or oldest videos, 35 per page |
+| User Followers / Following | `/users/followers`, `/users/following` | 30 accounts per page, each with counters |
+| User Playlists / Collections | `/users/playlists`, `/users/collections` | Playlists and public collections with covers & counts |
+| Resolve User | `/users/resolve` | Username ↔ ID ↔ secUid with follower count |
+| Search Videos | `/search/videos` | 20 per page; sort by relevance or likes, filter by date |
+| Search Users / Top / Live | `/search/users`, `/search/top`, `/search/live` | Accounts, TikTok's Top tab, live streams with viewer counts |
+| Search Suggestions | `/search/suggestions` | What the search box suggests while typing |
+| Hashtag Details / Videos | `/hashtags/details`, `/hashtags/videos` | Video count, total views; videos in ranked order |
+| Music Details / Videos | `/music/details`, `/music/videos` | Sound info with Apple Music / Spotify ids; videos using it |
+| Playlist / Collection Videos | `/playlists/details`, `/playlists/videos`, `/collections/videos` | Playlists and collections, 30 videos per page |
+| Place Details / Videos | `/places/details`, `/places/videos` | Address, category, photos; videos tagged there |
+| Effect Details | `/effects/details` | Effect name, icon & creator |
+| Trending / Explore Feeds | `/feed/trending`, `/feed/explore`, `/feed/explore/categories` | For You and Explore feeds for any country, 30 videos per call |
+| Live Room | `/live/details` | Is the account live now: title, viewers, category, stream links |
+| Ad Library | `/ads/search`, `/ads/details`, `/ads/advertisers`, `/ads/countries` | EU/UK ads with advertiser, targeting & reach by age and gender |
+| Top Ads | `/ads/top`, `/ads/top/details`, `/ads/top/filters` | Creative Center's best-performing ads by country, period & metric |
 
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `handle` | Yes | — | TikTok username (without the `@`). |
-| `max_results` | No | `10` | Number of videos to return (max 30). |
-| `page_cursor` | No | `0` | Pagination cursor from a previous response. |
+## 🔍 Exploring Parameters
 
-#### Example
+The same API is published on RapidAPI, and its playground is the easiest place to try parameters and see raw responses. Once a request looks right, run it locally for **unlimited free** data.
 
-```python
-import requests
-
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/users/videos",
-    params={"handle": "marvel", "max_results": 10},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
-
-#### Response
-
-<details>
-<summary>Sample Response (click to expand)</summary>
-
-```json
-{
-  "videos": [
-    {
-      "video_id": "7609039378899356959",
-      "region": "US",
-      "caption": "Families across the #MCU ❤️ Stream their stories now on Disney+.",
-      "created_at": 1771617567,
-      "duration_seconds": 30,
-      "author": {
-        "user_id": "6857582733233931270",
-        "handle": "marvel",
-        "display_name": "Marvel Entertainment",
-        "avatar_url": "https://p19-common-sign.tiktokcdn-eu.com/..."
-      },
-      "media": {
-        "video_url": "https://v58.tiktokcdn-eu.com/.../video.mp4",
-        "hd_video_url": null,
-        "file_size_bytes": 2297146
-      },
-      "audio": {
-        "audio_id": "7609044615715670814",
-        "title": "original sound - marvel",
-        "artist": "Marvel Entertainment",
-        "is_original": true
-      },
-      "stats": {
-        "views": 63259,
-        "likes": 8504,
-        "comments": 132,
-        "shares": 258,
-        "downloads": 0,
-        "saves": 795
-      },
-      "is_advertisement": true,
-      "is_pinned": false
-    }
-  ]
-}
-```
-
-</details>
-
----
-
-### Video Search
-
-```
-GET https://tiktok-scraper.omkar.cloud/tiktok/videos/search
-```
-
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `search_query` | Yes | — | Search keyword. |
-| `market` | No | `us` | Two-letter region code. |
-| `max_results` | No | `10` | Number of results (max 30). |
-| `page_cursor` | No | `0` | Pagination cursor from a previous response. |
-| `sort_by` | No | `relevance` | Sort order: `relevance`, `most_liked`, `latest`. |
-| `publish_time` | No | `all` | Publish time filter: `all`, `past_24_hours`, `this_week`, `this_month`, `last_3_months`, `last_6_months`. |
-
-#### Example
+1. [Subscribe to the free plan](https://rapidapi.com/OmkarCloud/api/best-tiktok-scraper-free-1000-calls/pricing) — 1,000 calls/month, no credit card.
+2. [Try the endpoints in the playground](https://rapidapi.com/OmkarCloud/api/best-tiktok-scraper-free-1000-calls/playground) — every param is pre-filled, so you see real data in one click.
+3. Copy the generated code and replace `https://best-tiktok-scraper-free-1000-calls.p.rapidapi.com` with `http://localhost:8000`. It will now run against your local API.
 
 ```python
 import requests
 
+# generated by the playground, host swapped for the local API
 response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/videos/search",
-    params={"search_query": "shinchan", "market": "us"},
-    headers={"API-Key": "YOUR_API_KEY"}
+    "http://localhost:8000/videos/details",
+    params={"video": "7692114317151423775"},
 )
-
 print(response.json())
 ```
 
-#### Response
+## 💬 Have Questions? We Have Answers.
 
-<details>
-<summary>Sample Response (click to expand)</summary>
+You're a developer — we know how hard completing a project can be. So we offer full support: just message us and we'll reply ✅ with a solution within 1 working day.
 
-```json
-{
-  "videos": [
-    {
-      "video_id": "7596632332644355346",
-      "region": "KR",
-      "caption": "title: 짱구는 못말려 fanart timelapse #digitalart #shinchan #timelapse",
-      "created_at": 1768728802,
-      "duration_seconds": 15,
-      "author": {
-        "user_id": "7489111776035259410",
-        "handle": "official_dongbo",
-        "display_name": "officialdongbo",
-        "avatar_url": "https://p16-sign-sg.tiktokcdn.com/..."
-      },
-      "media": {
-        "video_url": "https://v16m.tiktokcdn.com/.../video.mp4",
-        "file_size_bytes": 1291134
-      },
-      "audio": {
-        "audio_id": "7218208687667316737",
-        "title": "Neon-colored City",
-        "artist": "Reo",
-        "is_original": false,
-        "album": "Neon-colored City"
-      },
-      "stats": {
-        "views": 114425,
-        "likes": 2527,
-        "comments": 121,
-        "shares": 369,
-        "downloads": 30
-      },
-      "is_advertisement": false,
-      "is_pinned": false
-    }
-  ]
-}
-```
+[![Message Us on WhatsApp about TikTok Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20need%20help%20using%20the%20TikTok%20Scraper%20API.)
 
-</details>
+[![Ask Us by Email about TikTok Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=Help%20with%20TikTok%20Scraper%20API&body=I%20need%20help%20using%20the%20TikTok%20Scraper%20API.)
 
-## Error Handling
+## ⚡ Popular Scrapers by Omkar Cloud
 
-```python
-response = requests.get(
-    "https://tiktok-scraper.omkar.cloud/tiktok/videos/details",
-    params={"video_url": "https://www.tiktok.com/@giaerra/video/7577398554101058824"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+- [**Google Maps Scraper (3,100+ GitHub Stars)**](https://github.com/omkarcloud/google-maps-scraper) — type "dentists in New York", get every business as a ready-to-call lead list: phones, emails, websites & reviews. Up to 100K free leads/month.
+- [**IMDb Scraper**](https://github.com/omkarcloud/imdb-scraper) — movies, TV shows, ratings, cast & box office
+- [**Threads Scraper**](https://github.com/omkarcloud/threads-scraper) — Threads posts, profiles, replies & search
+- [**G2 Scraper**](https://www.omkar.cloud/tools/g2-scraper) — G2 product details, ratings & AI-found contacts
+- [**Website Email Contact Scraper**](https://www.omkar.cloud/tools/website-email-contact-scraper) — emails, phones & socials from any website
+- [**AliExpress Scraper**](https://www.omkar.cloud/tools/aliexpress-scraper) — live product details, SKU variants, stock & shipping
 
-if response.status_code == 200:
-    data = response.json()
-elif response.status_code == 401:
-    # Invalid API key
-    pass
-elif response.status_code == 429:
-    # Rate limit exceeded
-    pass
-```
+## ⭐ Love It? [Star It ⭐!](https://github.com/omkarcloud/tiktok-scraper)
 
-## FAQs
+Star the repo ⭐ and become my star hero!
 
-### What data does the API return?
+It's just 1 click, but it means the world to me.
 
-**Video Details** returns per video:
-- Video ID, caption, region, creation timestamp, duration
-- Direct MP4 download URLs (standard, watermarked, HD)
-- File sizes for each video quality
-- Thumbnail URLs (cover, animated, original)
-- Author info (handle, display name, avatar)
-- Audio/music details (title, artist, play URL, album)
-- Engagement stats (views, likes, comments, shares, downloads, saves)
-- Advertisement and pinned flags
-
-**User Profile** returns:
-- User ID, handle, display name, bio
-- Avatar URLs in 3 sizes (thumbnail, medium, large)
-- Verification and privacy status
-- Bio link, linked social accounts (Instagram, Twitter, YouTube)
-- Account creation date
-- Follower count, following count, total likes, video count
-
-**Trending Feed** returns a list of currently trending videos in any region, each with full video data as described above.
-
-**User Videos** returns a paginated list of a user's posted videos with full metadata.
-
-**Video Search** returns videos matching a keyword, with full video data and pagination. Supports sorting by relevance, likes, or date, and filtering by publish time.
-
-All in structured JSON. Ready to use in your app.
-
-### How accurate is the data?
-
-Data is pulled from TikTok in real time. Every API call fetches live data — not cached or stale results. View counts, follower counts, video URLs, and engagement metrics reflect what's on TikTok right now.
-
-### Can I download TikTok videos without watermarks?
-
-Yes. The Video Details endpoint returns multiple MP4 download URLs:
-- `video_url` — watermark-free MP4
-- `watermarked_video_url` — with TikTok watermark
-- `hd_video_url` — highest quality available (when the video supports it)
-
-All URLs are direct CDN links. No redirects, no scraping needed.
-
-
-### What regions are supported?
-
-Pass any two-letter country code as the `market` parameter. The Trending Feed and Video Search endpoints support regional filtering — get trending content from `us`, `gb`, `jp`, `in`, `br`, or any other TikTok market.
-
-## Rate Limits
-
-| Plan | Price | Requests/Month |
-|------|-------|----------------|
-| Free | $0 | 100 |
-| Starter | $16 | 3,000 |
-| Grow | $48 | 15,000 |
-| Scale | $148 | 75,000 |
-
-## Questions? We have answers.
-
-Reach out anytime. We will solve your query within 1 working day.
-
-[![Contact Us on WhatsApp about TikTok Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20a%20question%20about%20the%20TikTok%20Scraper%20API.)
-
-[![Contact Us on Email about TikTok Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:happy.to.help@omkar.cloud?subject=TikTok%20Scraper%20API%20Question)
+[![Star us on GitHub](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/star-us.png)](https://github.com/omkarcloud/tiktok-scraper)

@@ -1,0 +1,93 @@
+{
+ "musicInfo": {
+  "artist": {
+   "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=66d4a879&x-expires=1791378000&x-signature=GRIZpX3hmPEoDIyyfapTqj4XycY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+   "avatarMedium": "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=842ddadc&x-expires=1791378000&x-signature=4LPdLAdexhjJ19ZLe%2FpghZcGKZY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+   "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=a7af1ec5&x-expires=1791378000&x-signature=IE2VVNZpdD0I9wEwvF%2FQsutRPnU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+   "ftc": false,
+   "id": "7109837701625267206",
+   "nickname": "Øneheart",
+   "openFavorite": false,
+   "privateAccount": false,
+   "relation": 0,
+   "secUid": "MS4wLjABAAAAe6Bm1G-pmcj-6PUdqOh5xX6Fusxi2gtBX9sxT7jra1yC-QQg9HrAPZn0zRXuK5h2",
+   "secret": false,
+   "signature": "",
+   "uniqueId": "oneheartisok"
+  },
+  "artists": [
+   {
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=66d4a879&x-expires=1791378000&x-signature=GRIZpX3hmPEoDIyyfapTqj4XycY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "avatarMedium": "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=842ddadc&x-expires=1791378000&x-signature=4LPdLAdexhjJ19ZLe%2FpghZcGKZY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/ea6067313544e23ea371e47e0506c5d5~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=a7af1ec5&x-expires=1791378000&x-signature=IE2VVNZpdD0I9wEwvF%2FQsutRPnU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "ftc": false,
+    "id": "7109837701625267206",
+    "nickname": "Øneheart",
+    "openFavorite": false,
+    "privateAccount": false,
+    "relation": 0,
+    "secUid": "MS4wLjABAAAAe6Bm1G-pmcj-6PUdqOh5xX6Fusxi2gtBX9sxT7jra1yC-QQg9HrAPZn0zRXuK5h2",
+    "secret": false,
+    "signature": "",
+    "uniqueId": "oneheartisok"
+   },
+   {
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/facd5bee17cc97b0e57826ae18e089e4~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=1fdda501&x-expires=1791378000&x-signature=XQpkZT58xiZIgHlclZfVUu89T00%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "avatarMedium": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/facd5bee17cc97b0e57826ae18e089e4~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=72e8f4b5&x-expires=1791378000&x-signature=%2FIuoYyWuGPyAnOA1XgLTDdhQgFs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/facd5bee17cc97b0e57826ae18e089e4~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=8da14146&x-expires=1791378000&x-signature=O0mgJn7VgjshGLTLHFKyDRHyICg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5",
+    "ftc": false,
+    "id": "7359682848917734432",
+    "nickname": "Jérémy 🇫🇷💕",
+    "openFavorite": false,
+    "privateAccount": false,
+    "relation": 0,
+    "secUid": "MS4wLjABAAAAuF9VMg9_econDF_WUdaa29oqBVkKFQfLRXQ5R-2VwSOo98aQ41Zsu3cJgGvCU_ty",
+    "secret": false,
+    "signature": "",
+    "uniqueId": "reiidenshii"
+   }
+  ],
+  "music": {
+   "album": "snowfall (Slowed + Reverb)",
+   "authorName": "Øneheart & Jérémy 🇫🇷💕",
+   "coverLarge": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast5",
+   "coverMedium": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast5",
+   "coverThumb": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast5",
+   "duration": 60,
+   "id": "7077435666233051138",
+   "isCopyrighted": false,
+   "is_commerce_music": true,
+   "is_unlimited_music": false,
+   "original": false,
+   "playUrl": "https://sf19.tiktokcdn-us.com/obj/tos-alisg-ve-2774/ogoHUOoB0AQ34r7ii1SKiBIMWAqBfgUwxsM6ER",
+   "private": false,
+   "shoot_duration": 60,
+   "title": "snowfall (Slowed + Reverb)",
+   "tt2dsp": {
+    "tt_to_dsp_song_infos": [
+     {
+      "meta_song_id": "7077394429769844737",
+      "platform": 1,
+      "song_id": "1615334560",
+      "token": {}
+     },
+     {
+      "meta_song_id": "7077394429769844737",
+      "platform": 3,
+      "song_id": "4VkEkljlOC5cMbRMhREO5E"
+     }
+    ]
+   }
+  },
+  "stats": {
+   "videoCount": 170700
+  }
+ },
+ "shareMeta": {
+  "desc": "170.7k videos - Watch awesome short videos created with ♬ snowfall (Slowed + Reverb)",
+  "title": "Øneheart & reidenshi | ♬ snowfall (Slowed + Reverb) | on TikTok"
+ },
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": ""
+}

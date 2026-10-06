@@ -1,0 +1,93 @@
+{
+ "data": {
+  "id_str": "7692023419818265357",
+  "title": "BEST FEMALE FORTNITE PLAYER",
+  "user_count": 792,
+  "like_count": 0,
+  "status": 2,
+  "create_time": 1790938973,
+  "has_commerce_goods": false,
+  "age_restricted": {
+   "AgeInterval": 0,
+   "restricted": false,
+   "source": 0
+  },
+  "hashtag": {
+   "id": 5,
+   "image": {
+    "avg_color": "#E0BCD4",
+    "height": 0,
+    "image_type": 0,
+    "is_animated": false,
+    "open_web_url": "",
+    "uri": "webcast-sg/5Gaming.png",
+    "url_list": [
+     "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/5Gaming.png~tplv-obj.image",
+     "https://p19-webcast.tiktokcdn.com/img/alisg/webcast-sg/5Gaming.png~tplv-obj.image"
+    ],
+    "width": 0
+   },
+   "namespace": 0,
+   "title": "Gaming"
+  },
+  "game_tag": [
+   {
+    "bundle_id": "",
+    "full_name": "",
+    "game_category": [],
+    "gar": [],
+    "hashtag_id": [
+     5
+    ],
+    "hashtag_list": [],
+    "id": 101,
+    "is_new_game": false,
+    "landscape": 0,
+    "package_name": "",
+    "short_name": "",
+    "show_name": "Fortnite"
+   }
+  ],
+  "stats": {
+   "comment_count": 0,
+   "deprecated1": 0,
+   "deprecated2": "",
+   "digg_count": 0,
+   "enter_count": 1829590,
+   "fan_ticket": 0,
+   "follow_count": 2312,
+   "gift_uv_count": 0,
+   "id": 7692023419818265357,
+   "id_str": "7692023419818265357",
+   "like_count": 0,
+   "replay_fan_ticket": 0,
+   "replay_viewers": 1188501,
+   "room_follow_count": 0,
+   "share_count": 0,
+   "total_user": 1829590,
+   "total_user_desp": "",
+   "user_count_composition": {
+    "deprecated1": 0,
+    "my_follow": 0,
+    "other": 0,
+    "video_detail": 0
+   },
+   "watch_user_count": 0,
+   "watermelon": 0
+  },
+  "cover": {
+   "avg_color": "#CCA3BE",
+   "height": 0,
+   "image_type": 0,
+   "is_animated": false,
+   "open_web_url": "",
+   "uri": "webcast-oci-tx/7133203906113571630",
+   "url_list": [
+    "https://p16-webcast.tiktokcdn.com/webcast-oci-tx-va-transfer-us/7133203906113571630~tplv-obj.image",
+    "https://p19-webcast.tiktokcdn.com/webcast-oci-tx-va-transfer-us/7133203906113571630~tplv-obj.image"
+   ],
+   "width": 0
+  }
+ },
+ "status_code": 0
+}

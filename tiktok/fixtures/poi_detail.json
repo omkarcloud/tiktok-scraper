@@ -1,0 +1,161 @@
+{
+ "poiInfo": {
+  "poi": {
+   "address": "10777 Santa Monica Blvd, Los Angeles, CA, 90025, United States",
+   "allLevelGeoPoiInfo": {},
+   "category": "Church",
+   "city": "East Los Angeles",
+   "cityCode": "116023605",
+   "country": "",
+   "countryCode": "6252001",
+   "fatherPoiId": "22535796484723736",
+   "fatherPoiName": "East Los Angeles",
+   "id": "20442395500433212",
+   "indexEnabled": true,
+   "isClaimed": false,
+   "isCollected": false,
+   "name": "Los Angeles California Temple",
+   "phoneInfo": {
+    "exist": true
+   },
+   "pictureAlbum": {
+    "pictures": [
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/13cbb00b49430fc7fb33546a72e466c1~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822662530&x-signature=vGL4M0FJs6QK%2Fo6mLHQAfGkDM7A%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/7af19084e463ac0161e11115fc814236~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822670464&x-signature=0SvmX7oK2X5idHmZ3gNAaz%2BeyUY%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/c9ef606ef39ee87592b5d6747c7b5596~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822661562&x-signature=sOziJHas%2Bm98XL%2FRjJpRRih9jf0%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/105dd2cc0d77e11707431b2aae11a5ba~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822738037&x-signature=xDoK4SfS3JP2KWyHVpPUKiVffc8%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/61b7f487d64850c49dc7892421d4c13f~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822661562&x-signature=7M2wllqw6%2FSSGRHndJ9kPy%2B5aVY%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/71e62754ffe1b96be98cd84ca6b96d46~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822673778&x-signature=IczW2EXd%2BIzJWb%2FZ6nHSTVcHR9s%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/b75c76a200b7f038aaf759f23e21b7cb~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822670564&x-signature=f3wkI%2Bz%2FO9n1yRshBirCvEUWzbE%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/74222dd5eb8c7c2fc153e7b884e111af~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822667151&x-signature=mSE5gYGBVt11p0%2Bv79oH5ctpYH8%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/b855e2227254249ac17407ee9cc114b1~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822662530&x-signature=%2BG7Az7QeWdkJMJ7bdpl89pZhkjQ%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/6cad4c361c34be253f142edc62d26809~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822632375&x-signature=occNClPGSV1uNp0UjkXNBThWyO4%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/aba7b44f5aa8e539d39fb443ab3c9326~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822738037&x-signature=%2B%2FelZ2lRXJ3c9ikv1C3KGauPh6Q%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/95335e5330671d754a00da2ce4c6e9fa~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822632375&x-signature=bgif2W9jg1wp7nWf%2BBujQAg05D4%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/784147fb1d492ad0c4d6452a59014551~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822632375&x-signature=bOaIh9PKBJiUypMluKNcBAcGVAA%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p19-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/f3274a4c575c555f31cd3c18fe09dab9~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822632375&x-signature=l6Gl9P37hQMwYn0EHqPQTPHukD0%3D"
+      ]
+     },
+     {
+      "urlList": [
+       "https://p16-tiktok-poi-picture-sign.tiktokcdn-us.com/tos-useast5-i-8rftdyv36x-tx/805b08004d62a3f77da41994c821ea99~tplv-8rftdyv36x-heic-crop-v3:800:800.jpeg?rk3s=733ab7a5&x-expires=1822738037&x-signature=GxkIUuyDfst3y11Bc8NSvnQ9SAg%3D"
+      ]
+     }
+    ],
+    "totalCount": 15
+   },
+   "poiDetailTags": [
+    {
+     "content": "Closed",
+     "tagType": 4
+    },
+    {
+     "content": "Church",
+     "tagType": 5
+    }
+   ],
+   "poiHighlightTagModule": {
+    "iconTags": [
+     {
+      "icon": {
+       "tuxToken": "tux://icon?token=IconTickCircle&color=UIText2&from=poi_header_tag"
+      },
+      "tagContent": "Awesome open space",
+      "tagId": 51666299139
+     },
+     {
+      "icon": {
+       "tuxToken": "tux://icon?token=IconArchitecture&color=UIText2&from=poi_header_tag"
+      },
+      "tagContent": "Lost civilizations",
+      "tagId": 51906792195
+     },
+     {
+      "icon": {
+       "tuxToken": "tux://icon?token=IconTrojanHorse&color=UIText2&from=poi_header_tag"
+      },
+      "tagContent": "Huge dance space",
+      "tagId": 26683937795
+     }
+    ]
+   },
+   "poiReviewSummary": {
+    "maxScore": 5,
+    "noRating": false,
+    "score": 4.9,
+    "totalCount": 105337
+   },
+   "province": "",
+   "ttTypeCode": "08a3a0",
+   "ttTypeNameMedium": "Religious Destination",
+   "ttTypeNameSuper": "Outdoors and Attractions",
+   "ttTypeNameTiny": "Church",
+   "type": 3,
+   "typeCode": ""
+  },
+  "stats": {
+   "videoCount": 17745144
+  }
+ },
+ "shareMeta": {
+  "desc": "10777 Santa Monica Blvd, Los Angeles, CA, 90025, United States",
+  "title": "Los Angeles California Temple"
+ },
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": ""
+}

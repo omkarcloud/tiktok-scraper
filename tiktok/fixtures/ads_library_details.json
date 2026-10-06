@@ -1,0 +1,400 @@
+{
+ "data": {
+  "ad": {
+   "id": "1878154340615249",
+   "name": "Sportschnapper",
+   "audit_status": "1",
+   "type": "2",
+   "first_shown_date": 1791072000000,
+   "last_shown_date": 1791072000000,
+   "videos": [
+    {
+     "video_url": "https://library.tiktok.com/api/v1/cdn/1791197954/video/aHR0cHM6Ly92MTZtLnRpa3Rva2Nkbi5jb20vNmUwZTMzN2M3OTFlNWZkOGQ1ODFkMWY1NGE2MzVlYTUvNmFjM2Q3NmEvdmlkZW8vdG9zL25vMWEvdG9zLW5vMWEtdmUtMDA2OC1uby9vVUJmcUZFRUFTYVZLRGUyRWlvRldaRUk2UUVDdHFJa2dRQjJJSy8=/c721cdbb-b987-419b-a06f-53bcf5fdc32d?a=475769&bt=1025&btag=e000b0000&bti=PDU2NmYwMy86&ft=.NpOcInz7ThhAx-GXq8Zmo&l=20261005185914536AD6DDAFFAB66DC08F&mime_type=video_mp4&rc=N2g4Mzk1NDc7aDQ0ZztmZUBpM3A0bHg5cjhkZDMzbzgzNUBgYS4wMC0vNTUxL141MV4uYSNlaWVgMmRrL29hLS1kLzFzcw%3D%3D&signature=yFQp9e9FOZeQtI0uHVYoxxBNvkTn46jlhcScwhOLJXM%3D&vvpl=1",
+     "cover_img": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/ogfWy2R2qqKIEgEdoIaFZCrDBVBitIV2EekABF~tplv-noop.image?dr=18692&refresh_token=ab3ddde2&x-expires=1791219562&x-signature=Cd2D1JNvTpIOHVc2bTjNADCH5JE%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=0c75dd76&idc=sg1&VideoID=v24025gl0000dara25nog65ucih1lmh0"
+    }
+   ],
+   "estimated_audience": "0-1K",
+   "spent": "",
+   "impression": 0,
+   "show_mode": 1,
+   "image_urls": [],
+   "rejection_info": null,
+   "sor_audit_status": "1",
+   "title": "Die legendären Nike Socken #sportschnapper #lifestyle #fussball #nike #socken ",
+   "advertising_objective": "Community interaction"
+  },
+  "advertiser": {
+   "name": "Sportschnapper",
+   "adv_biz_ids": "7672216207558410241",
+   "registry_location": "Austria",
+   "tt_user": null,
+   "sponsor": "Sportschnapper"
+  },
+  "targeting": {
+   "location": {
+    "total_region": 3,
+    "total_impressions": "0-1K",
+    "data": [
+     {
+      "region": "HU",
+      "impressions": "0-1K",
+      "breakdowns": [
+       {
+        "age": "13-17",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       }
+      ]
+     },
+     {
+      "region": "AT",
+      "impressions": "0-1K",
+      "breakdowns": [
+       {
+        "age": "13-17",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       }
+      ]
+     },
+     {
+      "region": "DE",
+      "impressions": "0-1K",
+      "breakdowns": [
+       {
+        "age": "13-17",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "13-17",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "18-24",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "25-34",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "35-44",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "45-54",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "MALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "FEMALE",
+        "impressions": "0-1K"
+       },
+       {
+        "age": "55+",
+        "gender": "UNKNOWN",
+        "impressions": "0-1K"
+       }
+      ]
+     }
+    ]
+   },
+   "age": [
+    {
+     "region": "HU",
+     "13-17": true,
+     "18-24": true,
+     "25-34": true,
+     "35-44": true,
+     "45-54": true,
+     "55+": true
+    },
+    {
+     "region": "AT",
+     "13-17": true,
+     "18-24": true,
+     "25-34": true,
+     "35-44": true,
+     "45-54": true,
+     "55+": true
+    },
+    {
+     "region": "DE",
+     "13-17": true,
+     "18-24": true,
+     "25-34": true,
+     "35-44": true,
+     "45-54": true,
+     "55+": true
+    }
+   ],
+   "gender": [
+    {
+     "region": "HU",
+     "female": true,
+     "male": true,
+     "unknown": true
+    },
+    {
+     "region": "AT",
+     "female": true,
+     "male": true,
+     "unknown": true
+    },
+    {
+     "region": "DE",
+     "female": true,
+     "male": true,
+     "unknown": true
+    }
+   ],
+   "target_audience_size": "29.3M-35.8M",
+   "audience": "No",
+   "interest": "",
+   "video_interactions": "",
+   "creator_interactions": "",
+   "countries": [
+    "HU",
+    "AT",
+    "DE"
+   ],
+   "cities": [],
+   "provinces": [],
+   "languages": [],
+   "device_models": [],
+   "operating_systems": [
+    "ALL"
+   ],
+   "high_spending_power": "No",
+   "audience_exclude": "No"
+  },
+  "display_mode": "enhanced"
+ },
+ "code": 0
+}

@@ -1,0 +1,308 @@
+{
+ "itemInfo": {
+  "itemStruct": {
+   "AIGCDescription": "",
+   "CategoryType": 120,
+   "IsHDBitrate": false,
+   "ShowAIGC": true,
+   "aigcLabelType": 0,
+   "author": {
+    "UserStoryStatus": 0,
+    "avatarLarger": "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/7310257743653240837~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=ce1ac145&x-expires=1791378000&x-signature=Ar2s47BKKUdAahisA8YZtnHst2A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarMedium": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/7310257743653240837~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=f894d4ca&x-expires=1791378000&x-signature=NFh64vI8GPG8Q76TibxOT21xHVg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarThumb": "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/7310257743653240837~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=28ebdca7&x-expires=1791378000&x-signature=LwVOL%2Bd6zhSV2RuE5L3mrk3DekU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "commentSetting": 0,
+    "downloadSetting": 0,
+    "duetSetting": 0,
+    "ftc": false,
+    "id": "6663294979903422470",
+    "isADVirtual": false,
+    "isEmbedBanned": false,
+    "nickname": "ESPN",
+    "openFavorite": false,
+    "privateAccount": false,
+    "relation": 0,
+    "secUid": "MS4wLjABAAAAbq-1Yqpp1a6u5KbV_sMg93_FK7AN3d6MJeZ3H0Yj3vZXOtqFXXjc2TIkMW7flCxX",
+    "secret": false,
+    "shortDramaCreator": {},
+    "signature": "Serving Sports Fans. Anytime. Anywhere.",
+    "stitchSetting": 0,
+    "uniqueId": "espn",
+    "verified": true
+   },
+   "authorStats": {
+    "diggCount": 22800,
+    "followerCount": 61200000,
+    "followingCount": 694,
+    "friendCount": 0,
+    "heart": 6400000000,
+    "heartCount": 2100000000,
+    "videoCount": 11300
+   },
+   "authorStatsV2": {
+    "diggCount": "22800",
+    "followerCount": "61200000",
+    "followingCount": "694",
+    "friendCount": "0",
+    "heart": "6400000000",
+    "heartCount": "6400000000",
+    "videoCount": "11300"
+   },
+   "backendSourceEventTracking": "",
+   "challenges": [
+    {
+     "coverLarger": "",
+     "coverMedium": "",
+     "coverThumb": "",
+     "desc": "",
+     "id": "3397183",
+     "profileLarger": "",
+     "profileMedium": "",
+     "profileThumb": "",
+     "title": "nflfootball"
+    },
+    {
+     "coverLarger": "",
+     "coverMedium": "",
+     "coverThumb": "",
+     "desc": "All things NFL, all the time.",
+     "id": "9752",
+     "profileLarger": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/0246c4d4d4ffb519ceabb34b92bb0319~tplv-tiktokx-origin.image?dr=9627&x-expires=1791226800&x-signature=syMYo1YotYjCvtfLjJ3sOiGrtuU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8",
+     "profileMedium": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/0246c4d4d4ffb519ceabb34b92bb0319~tplv-tiktokx-origin.image?dr=9627&x-expires=1791226800&x-signature=syMYo1YotYjCvtfLjJ3sOiGrtuU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8",
+     "profileThumb": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/0246c4d4d4ffb519ceabb34b92bb0319~tplv-tiktokx-origin.image?dr=9627&x-expires=1791226800&x-signature=syMYo1YotYjCvtfLjJ3sOiGrtuU%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8",
+     "title": "nfl"
+    }
+   ],
+   "collected": false,
+   "contents": [
+    {
+     "desc": "The winless teams through Week 4 👀 #nflfootball #nfl",
+     "textExtra": [
+      {
+       "awemeId": "",
+       "end": 48,
+       "hashtagId": "3397183",
+       "hashtagName": "nflfootball",
+       "isCommerce": false,
+       "start": 36,
+       "subType": 0,
+       "type": 1
+      },
+      {
+       "awemeId": "",
+       "end": 53,
+       "hashtagId": "9752",
+       "hashtagName": "nfl",
+       "isCommerce": false,
+       "start": 49,
+       "subType": 0,
+       "type": 1
+      }
+     ]
+    }
+   ],
+   "createTime": 1791158721,
+   "creatorAIComment": {
+    "eligibleVideo": false,
+    "hasAITopic": false,
+    "notEligibleReason": 101
+   },
+   "desc": "The winless teams through Week 4 👀 #nflfootball #nfl",
+   "digged": false,
+   "duetDisplay": 0,
+   "duetEnabled": true,
+   "forFriend": false,
+   "id": "7692968080456092958",
+   "imagePost": {
+    "cover": {
+     "imageHeight": 2000,
+     "imageURL": {
+      "urlList": [
+       "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=tHAo%2FHf6qV2jntO6YBPrKYn9XqM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+       "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=9qxL42Lz6mzIarX0gYl2r44Btc8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+      ]
+     },
+     "imageWidth": 1600
+    },
+    "images": [
+     {
+      "imageHeight": 2000,
+      "imageURL": {
+       "urlList": [
+        "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=tHAo%2FHf6qV2jntO6YBPrKYn9XqM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+        "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=9qxL42Lz6mzIarX0gYl2r44Btc8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+       ]
+      },
+      "imageWidth": 1600
+     },
+     {
+      "imageHeight": 2000,
+      "imageURL": {
+       "urlList": [
+        "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/0407bd508f2d4baca673460c25c6996f~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=RDJjU7FTCefumrqTGKZS28lyLZs%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+        "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/0407bd508f2d4baca673460c25c6996f~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=w%2BaHOOEjSEJTx65gXneDy9Dmp1c%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+       ]
+      },
+      "imageWidth": 1600
+     },
+     {
+      "imageHeight": 2000,
+      "imageURL": {
+       "urlList": [
+        "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/9689d72d9edf440ea0009aad2f2e2371~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=sw7u9ZQpP8%2FxPNcXWEjyATklrZA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+        "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/9689d72d9edf440ea0009aad2f2e2371~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=NDWnm34JoR%2F2SS%2FPaGqgVrPy%2FT8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+       ]
+      },
+      "imageWidth": 1600
+     },
+     {
+      "imageHeight": 2000,
+      "imageURL": {
+       "urlList": [
+        "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/9576f30a78f242e4b692a2629b8840ce~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=gGQNkPBhtmZpRO6XyU0aWJDrJS8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+        "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/9576f30a78f242e4b692a2629b8840ce~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=rDljOZGJCX49vtYoCGTAgmx2xvA%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+       ]
+      },
+      "imageWidth": 1600
+     },
+     {
+      "imageHeight": 2000,
+      "imageURL": {
+       "urlList": [
+        "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/52bc40f41f1d41b484be253a96ea99f2~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=cB8YpF2DuLRR7qzAsXqsVa0ISD8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+        "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/52bc40f41f1d41b484be253a96ea99f2~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=HZCCPb3TEcCakf8KhUNH0fWLWuw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+       ]
+      },
+      "imageWidth": 1600
+     }
+    ],
+    "shareCover": {
+     "imageHeight": 2000,
+     "imageURL": {
+      "urlList": [
+       "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=tHAo%2FHf6qV2jntO6YBPrKYn9XqM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+       "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=9qxL42Lz6mzIarX0gYl2r44Btc8%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1"
+      ]
+     },
+     "imageWidth": 1600
+    }
+   },
+   "isAd": false,
+   "isProhibited": false,
+   "isReviewing": false,
+   "itemCommentStatus": 0,
+   "item_control": {
+    "can_repost": true
+   },
+   "music": {
+    "album": "snowfall (Slowed + Reverb)",
+    "authorName": "Øneheart & reidenshi",
+    "coverLarge": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast8",
+    "coverMedium": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast8",
+    "coverThumb": "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oADJAEoAOIhAcFht4QgfAAVzfmAEBZg4CpIUCB~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=81f88b70&idc=useast8",
+    "duration": 60,
+    "id": "7077435666233051138",
+    "isCopyrighted": false,
+    "is_commerce_music": true,
+    "is_unlimited_music": false,
+    "original": false,
+    "playUrl": "https://sf16.tiktokcdn-us.com/obj/tos-alisg-ve-2774/ogoHUOoB0AQ34r7ii1SKiBIMWAqBfgUwxsM6ER",
+    "private": false,
+    "shoot_duration": 60,
+    "title": "snowfall (Slowed + Reverb)",
+    "tt2dsp": {
+     "tt_to_dsp_song_infos": [
+      {
+       "meta_song_id": "7077394429769844737",
+       "platform": 1,
+       "song_id": "1615334560",
+       "token": {}
+      },
+      {
+       "meta_song_id": "7077394429769844737",
+       "platform": 3,
+       "song_id": "4VkEkljlOC5cMbRMhREO5E"
+      }
+     ]
+    }
+   },
+   "officalItem": false,
+   "originalItem": false,
+   "privateItem": false,
+   "secret": false,
+   "shareEnabled": true,
+   "stats": {
+    "collectCount": 2885,
+    "commentCount": 1479,
+    "diggCount": 71500,
+    "playCount": 829700,
+    "shareCount": 2011
+   },
+   "statsV2": {
+    "collectCount": "2885",
+    "commentCount": "1479",
+    "diggCount": "71500",
+    "playCount": "829700",
+    "repostCount": "0",
+    "shareCount": "2011"
+   },
+   "stitchDisplay": 0,
+   "stitchEnabled": true,
+   "suggestedWords": [
+    "cj stroud",
+    "Justin Herbert",
+    "jeremiah smith",
+    "teams that are 4 and 0",
+    "football",
+    "NFL Football",
+    "NFL Football Teams",
+    "nfl teams",
+    "nfl week 4",
+    "National Football League"
+   ],
+   "textExtra": [
+    {
+     "awemeId": "",
+     "end": 48,
+     "hashtagId": "3397183",
+     "hashtagName": "nflfootball",
+     "isCommerce": false,
+     "start": 36,
+     "subType": 0,
+     "type": 1
+    },
+    {
+     "awemeId": "",
+     "end": 53,
+     "hashtagId": "9752",
+     "hashtagName": "nfl",
+     "isCommerce": false,
+     "start": 49,
+     "subType": 0,
+     "type": 1
+    }
+   ],
+   "textLanguage": "en",
+   "textTranslatable": true,
+   "titleLanguage": "un",
+   "titleTranslatable": false,
+   "video": {
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=tHAo%2FHf6qV2jntO6YBPrKYn9XqM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+    "duration": 0,
+    "height": 0,
+    "id": "7692968080456092958",
+    "originCover": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-i-photomode-tx2/a38582ca7bdf4c5a84facb0b19fe50e4~tplv-photomode-image.jpeg?dr=9616&x-expires=1791378000&x-signature=tHAo%2FHf6qV2jntO6YBPrKYn9XqM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8&ftpl=1",
+    "ratio": "",
+    "volumeInfo": {},
+    "width": 0
+   }
+  }
+ },
+ "shareMeta": {
+  "desc": "The winless teams through Week 4 👀 #nflfootball #nfl",
+  "title": "ESPN on TikTok"
+ },
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": ""
+}

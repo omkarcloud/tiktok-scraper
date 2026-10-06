@@ -1,0 +1,52 @@
+{
+ "data": [
+  {
+   "id": "1878154340615249",
+   "name": "sportschnapper.at",
+   "audit_status": "1",
+   "type": "2",
+   "first_shown_date": 1791072000000,
+   "last_shown_date": 1791072000000,
+   "videos": [
+    {
+     "video_url": "https://library.tiktok.com/api/v1/cdn/1791197953/video/aHR0cHM6Ly92NzcudGlrdG9rY2RuLmNvbS8wNTM3OTgxNjA0YjVjYzNlNzg5MTYyOTkzZGEzZDM2YS82YWMzZDc2OS92aWRlby90b3Mvbm8xYS90b3Mtbm8xYS12ZS0wMDY4LW5vL29VQmZxRkVFQVNhVktEZTJFaW9GV1pFSTZRRUN0cUlrZ1FCMklLLw==/0bb756d4-ece2-407d-b5dd-90cd3046dd82?a=475769&bt=1025&btag=e000b0000&bti=PDU2NmYwMy86&ft=.NpOcInz7ThlAx-GXq8Zmo&l=20261005185913AD9713C1AF89B2B1D5A7&mime_type=video_mp4&rc=N2g4Mzk1NDc7aDQ0ZztmZUBpM3A0bHg5cjhkZDMzbzgzNUBgYS4wMC0vNTUxL141MV4uYSNlaWVgMmRrL29hLS1kLzFzcw%3D%3D&signature=MWLbKYXENysrCHn5WO7bfZIVnnIeFstOYld7fPC%2FG%2Bk%3D&vvpl=1",
+     "cover_img": "https://p19-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/ogfWy2R2qqKIEgEdoIaFZCrDBVBitIV2EekABF~tplv-noop.image?dr=18692&refresh_token=320f3d27&x-expires=1791219561&x-signature=5Zqe6o1gBPwyzhOzTo9C%2B0X3P7Q%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=0c75dd76&idc=sg1&VideoID=v24025gl0000dara25nog65ucih1lmh0"
+    }
+   ],
+   "estimated_audience": "0-1K",
+   "spent": "",
+   "impression": 0,
+   "show_mode": 1,
+   "image_urls": [],
+   "rejection_info": null,
+   "sor_audit_status": "1",
+   "title": "Die legendären Nike Socken #sportschnapper #lifestyle #fussball #nike #socken "
+  },
+  {
+   "id": "1878154340617217",
+   "name": "sportschnapper.at",
+   "audit_status": "1",
+   "type": "2",
+   "first_shown_date": 1791072000000,
+   "last_shown_date": 1791072000000,
+   "videos": [
+    {
+     "video_url": "https://library.tiktok.com/api/v1/cdn/1791197953/video/aHR0cHM6Ly92NzcudGlrdG9rY2RuLmNvbS8yMGEyZTMzMzkwMTE4ZmFiZWU3YmE4MzUzZTdjNGIxMC82YWMzZDc3NC92aWRlby90b3Mvbm8xYS90b3Mtbm8xYS12ZS0wMDY4YzAwMS1uby9vTWVVOEV4MUJBNm9RamFCQUlGUWV6SURIZjg2aktjRUxJRGw1RS8=/b8df3409-4c17-48bf-8d5a-89a4af4b29af?a=475769&bt=785&btag=e00078000&bti=PDU2NmYwMy86&ft=.NpOcInz7ThlAx-GXq8Zmo&l=20261005185913AD9713C1AF89B2B1D5A7&mime_type=video_mp4&rc=aThnZTQ2NDw4NTY5N2k4N0BpM3RwaW45cmt2PDMzbzczNUAtMF9fLl4xNS4xMzZiNF4tYSM1NDNjMmRzbHBhLS1kMTFzcw%3D%3D&signature=IGayc7RTh%2B8b%2B0RpIiGSvpBy3MfvQxKbWLQi7wOoiFQ%3D&vvpl=1",
+     "cover_img": "https://p16-common-sign.tiktokcdn.com/tos-no1a-p-0037-no/oAc2S9gAhsATfez4NZtgOePfARIYfiAvYMmNLH~tplv-noop.image?dr=18692&refresh_token=9cd7f737&x-expires=1791219572&x-signature=3GhXZW5%2BRtRI3L97H4mKQYxxrtQ%3D&t=9276707c&ps=14f1eb3e&shp=9e36835a&shcp=0c75dd76&idc=sg1&VideoID=v24044gl0000d9ssohvog65kff6m7q80"
+    }
+   ],
+   "estimated_audience": "0-1K",
+   "spent": "",
+   "impression": 0,
+   "show_mode": 1,
+   "image_urls": [],
+   "rejection_info": null,
+   "sor_audit_status": "1",
+   "title": "Nike Drill Top Academy23 - lass dir dieses Teil nicht entgehen #sportschnapper #nike "
+  }
+ ],
+ "total": 493,
+ "has_more": true,
+ "search_id": "eyJsYXN0X3NvcnQiOlsxNi4yMTQ0OTcsMTc4OTM0NDAwMDAwMF0sIm5leHRfY3Vyc29yIjoxMn0=",
+ "code": 0
+}

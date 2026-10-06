@@ -1,0 +1,69 @@
+{
+ "shareMeta": {
+  "desc": "@mrbeast 142.9m Followers, 355 Following, 1510.4m Likes - Watch awesome short videos created by MrBeast",
+  "title": "MrBeast on TikTok"
+ },
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": "",
+ "userInfo": {
+  "stats": {
+   "diggCount": 0,
+   "followerCount": 142900000,
+   "followingCount": 355,
+   "friendCount": 285,
+   "heart": 1500000000,
+   "heartCount": 1500000000,
+   "videoCount": 477
+  },
+  "statsV2": {
+   "diggCount": "0",
+   "followerCount": "142928477",
+   "followingCount": "355",
+   "friendCount": "285",
+   "heart": "1510358266",
+   "heartCount": "1510358266",
+   "videoCount": "477"
+  },
+  "user": {
+   "UserStoryStatus": 0,
+   "avatarLarger": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/1e2348ca19d394037718e3b1d3fc2958~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=d877d3d5&x-expires=1791378000&x-signature=I1qd%2BNmlYc9KkepN2hevHIQ11F8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+   "avatarMedium": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/1e2348ca19d394037718e3b1d3fc2958~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=0151cb87&x-expires=1791378000&x-signature=lKVY4VACG8ygWhZXnsaCzGdQuQM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=f20df69d&idc=no1a",
+   "avatarThumb": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/1e2348ca19d394037718e3b1d3fc2958~tplv-tiktokx-cropcenter:100:100.jpeg?dr=10399&refresh_token=03d012c3&x-expires=1791378000&x-signature=%2F4l8IzFOH3QAAFV0j7PRruB6wck%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=f20df69d&idc=no1a",
+   "bioLink": {
+    "link": "http://themostdangerousgames.com",
+    "risk": 3
+   },
+   "canExpPlaylist": true,
+   "commentSetting": 0,
+   "commerceUserInfo": {
+    "commerceUser": false
+   },
+   "downloadSetting": 0,
+   "duetSetting": 0,
+   "followingVisibility": 2,
+   "ftc": false,
+   "id": "6614519312189947909",
+   "isADVirtual": false,
+   "isEmbedBanned": false,
+   "nickNameModifyTime": 1651262162,
+   "nickname": "MrBeast",
+   "openFavorite": false,
+   "privateAccount": false,
+   "profileEmbedPermission": 1,
+   "profileTab": {
+    "showMusicTab": true,
+    "showPlayListTab": true
+   },
+   "relation": 0,
+   "secUid": "MS4wLjABAAAABKjQkOz_IIzXXzEAl_9LGsWhvK-gBnlczwRPXK8EmxAp6K3X0qiaP5_OEqmm0XwG",
+   "secret": false,
+   "shortDramaCreator": {},
+   "signature": "Checkout My New Book!👇",
+   "stitchSetting": 0,
+   "ttSeller": false,
+   "uniqueId": "mrbeast",
+   "verified": true
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "hasMore": true,
+ "isTruncated": false,
+ "minCursor": 1791207111,
+ "statusCode": 0,
+ "status_code": 0,
+ "status_msg": "",
+ "total": 96072949,
+ "userList": [
+  {
+   "stats": {
+    "diggCount": 852,
+    "followerCount": 803,
+    "followingCount": 110,
+    "friendCount": 0,
+    "heart": 9158,
+    "heartCount": 9158,
+    "videoCount": 159
+   },
+   "statsV2": {
+    "diggCount": "852",
+    "followerCount": "803",
+    "followingCount": "110",
+    "friendCount": "0",
+    "heart": "9158",
+    "heartCount": "9158",
+    "videoCount": "159"
+   },
+   "user": {
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/61f72c4b55122dc08c25640978b1e401~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=2de55794&x-expires=1791378000&x-signature=Z4eRy28nwPlRbeVQJtgFeufG1RE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarMedium": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/61f72c4b55122dc08c25640978b1e401~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=bc574913&x-expires=1791378000&x-signature=Acy58%2F9nuDtn6JxqDdtv991Aetw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/61f72c4b55122dc08c25640978b1e401~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=c2d059b4&x-expires=1791378000&x-signature=k5nUdm6JxCqJR8O7ETZu1moUDFM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "commentSetting": 0,
+    "downloadSetting": 0,
+    "duetSetting": 0,
+    "ftc": false,
+    "id": "6980379519173559302",
+    "isADVirtual": false,
+    "nickname": "Carlos Reynoso",
+    "openFavorite": false,
+    "privateAccount": false,
+    "relation": 0,
+    "secUid": "MS4wLjABAAAA0Vh46zod-x8P93Ynu3CfB49iSRU78WgedwZzmks7CdwBzjquZBq-0q-bzax3x_fj",
+    "secret": false,
+    "shortDramaCreator": {},
+    "signature": "🇬🇹",
+    "stitchSetting": 0,
+    "ttSeller": false,
+    "uniqueId": "carlosreynoso_1",
+    "verified": false
+   }
+  },
+  {
+   "stats": {
+    "diggCount": 1174,
+    "followerCount": 94,
+    "followingCount": 54,
+    "friendCount": 0,
+    "heart": 403,
+    "heartCount": 403,
+    "videoCount": 58
+   },
+   "statsV2": {
+    "diggCount": "1174",
+    "followerCount": "94",
+    "followingCount": "54",
+    "friendCount": "0",
+    "heart": "403",
+    "heartCount": "403",
+    "videoCount": "58"
+   },
+   "user": {
+    "avatarLarger": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/ce7965353dcbbc4d53d96f7ffbc90887~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=9640&refresh_token=e8d79900&x-expires=1791378000&x-signature=24GL7WnnVGcOQs96W%2B6wlI%2Bj7ac%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarMedium": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/ce7965353dcbbc4d53d96f7ffbc90887~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=deb57df5&x-expires=1791378000&x-signature=38duhndE2KcbayA9zux4cnml0d0%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "avatarThumb": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/ce7965353dcbbc4d53d96f7ffbc90887~tplv-tiktokx-cropcenter:100:100.jpeg?dr=9640&refresh_token=82e59bad&x-expires=1791378000&x-signature=dcbSGuCbFr%2FhyCVyTQfj1HDYdcs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+    "commentSetting": 0,
+    "downloadSetting": 0,
+    "duetSetting": 0,
+    "ftc": false,
+    "id": "7614882704609477653",
+    "isADVirtual": false,
+    "nickname": "aomm_sz",
+    "openFavorite": false,
+    "privateAccount": false,
+    "relation": 0,
+    "secUid": "MS4wLjABAAAAUNPPsYLhMdesmyoG_YzaQNb1uny6ICblrQbrKuZTuVexStLRQRybmaGj5ntCNqpF",
+    "secret": false,
+    "shortDramaCreator": {},
+    "signature": "",
+    "stitchSetting": 0,
+    "ttSeller": false,
+    "uniqueId": "khemjira2946",
+    "verified": false
+   }
+  }
+ ]
+}

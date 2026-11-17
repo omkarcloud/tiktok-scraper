@@ -65,7 +65,7 @@ Failure taxonomy (scraper_errors, mapped to HTTP by route_glue):
   TikTokNotFound       unknown user / video / hashtag / sound ...         — never retried
 """
 import hashlib
-import json
+import fastjson
 import os
 import random
 import re
@@ -79,9 +79,11 @@ from urllib.parse import urlencode
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import config
+import egress
 from scraper_errors import BadRequest, Blocked, NotFound, UpstreamError
 
 from . import signer
+from scraper_utils import debug, fanout
 
 WWW = "https://www.tiktok.com"
 WEBCAST = "https://webcast.tiktok.com"
@@ -104,7 +106,6 @@ LOGIN_WALL_STATUS = 2483       # "Please login your account first" (search witho
 
 PAGE_HEADERS = {
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "accept-language": "en-US,en;q=0.9",
     "sec-fetch-dest": "document",
     "sec-fetch-mode": "navigate",
     "sec-fetch-site": "none",
@@ -162,7 +163,7 @@ class _Client:
         proxy = config.tiktok_proxy(country)
         if proxy:
             self.session.proxies = {"http": proxy, "https": proxy}
-        self.session.headers.update({"user-agent": USER_AGENT, "accept-language": "en-US,en;q=0.9"})
+        self.session.headers.update({"user-agent": USER_AGENT, "accept-language": egress.accept_language(proxy)})
         self.country = country
         self.device_id = str(random.randint(7250000000000000000, 7351147085025500000))
         self.born = time.time()
@@ -217,14 +218,7 @@ def _release(client):
 
 def dump_debug(name, text):
     """Write a raw response to $TIKTOK_DEBUG_DIR/<name>.txt."""
-    dbg = os.environ.get("TIKTOK_DEBUG_DIR", "")
-    if dbg and text:
-        try:
-            os.makedirs(dbg, exist_ok=True)
-            with open(os.path.join(dbg, name + ".txt"), "w") as f:
-                f.write(text)
-        except OSError:
-            pass
+    debug.dump("TIKTOK_DEBUG_DIR", name, text)
 
 
 def universal_data(html):
@@ -233,7 +227,7 @@ def universal_data(html):
     if not match:
         return None
     try:
-        scope = json.loads(match.group(1)).get("__DEFAULT_SCOPE__")
+        scope = fastjson.loads(match.group(1)).get("__DEFAULT_SCOPE__")
     except (ValueError, AttributeError):
         return None
     return scope if isinstance(scope, dict) else None
@@ -338,7 +332,7 @@ def _api_once(client, path, params, *, signed, base, host, referer):
     if not text.strip():
         raise TikTokBlocked(f"{path} answered with an empty body")
     try:
-        payload = json.loads(text)
+        payload = fastjson.loads(text)
     except ValueError:
         dump_debug("nonjson" + path.replace("/", "_"), text)
         raise TikTokBlocked(f"{path} returned a non-JSON body")
@@ -617,13 +611,7 @@ def creative_center(path, params, *, not_found=()):
 def run_parallel(fns):
     """Run zero-arg callables in parallel; results align with `fns`.
     Exceptions propagate from the first failing call."""
-    if not fns:
-        return []
-    if len(fns) == 1:
-        return [fns[0]()]
-    with ThreadPoolExecutor(max_workers=min(FANOUT_WORKERS, len(fns))) as ex:
-        futures = [ex.submit(fn) for fn in fns]
-        return [f.result() for f in futures]
+    return fanout.per_call(fns, FANOUT_WORKERS)
 
 
 if __name__ == "__main__":

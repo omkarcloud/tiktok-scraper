@@ -1,0 +1,21 @@
+@baseUrl = http://127.0.0.1:4000/rpi
+# @baseUrl = https://tiktok-scraper.omkar.cloud
+
+# ========================================
+# TIKTOK SCRAPER ENDPOINTS
+# ========================================
+
+### Video Details (by URL)
+GET {{baseUrl}}/tiktok/videos/details?video_url=https://www.tiktok.com/@giaerra/video/7577398554101058824
+
+### Trending Videos Feed
+GET {{baseUrl}}/tiktok/videos/trending
+
+### User Profile
+GET {{baseUrl}}/tiktok/users/profile?handle=marvel
+
+### User Videos
+GET {{baseUrl}}/tiktok/users/videos?handle=marvel
+
+### Video Search
+GET {{baseUrl}}/tiktok/videos/search?search_query=shinchan

@@ -71,11 +71,14 @@ Deliberately dropped as noise:
                  `deprecated*` keys, pay grades, badge lists, push urls —
                  broadcaster / gifting plumbing with no public reading
 """
-import json
+import fastjson
 import re
 from datetime import datetime, timezone
 
 from . import refs
+from scraper_utils.values import as_dict as _dict, as_list as _list, to_int
+from scraper_utils.text import trimmed as clean
+from scraper_utils.dates import epoch_utc as iso_utc
 
 _QUALITY_RE = re.compile(r"_(\d{3,4}p)(?:_|$)")
 _GEAR_RE = re.compile(r"_(\d{3,4})_")
@@ -88,27 +91,6 @@ LIVE_STATUS = {2: "live", 4: "offline"}
 # ---- scalars ---------------------------------------------------------------------------
 # The same scalar helpers the other scrapers here use, kept inside this
 # package so it runs standalone (no sibling scraper packages needed).
-
-def clean(value):
-    """Whitespace-trimmed string, or None for empty / non-strings."""
-    if value is None or isinstance(value, (dict, list, bool)):
-        return None
-    text = str(value).strip()
-    return text or None
-
-
-def to_int(value):
-    if value is None or isinstance(value, bool):
-        return None
-    if isinstance(value, int):
-        return value
-    if isinstance(value, float):
-        return int(value)
-    text = str(value).strip().replace(",", "")
-    try:
-        return int(text)
-    except ValueError:
-        return None
 
 
 def to_float(value):
@@ -137,25 +119,6 @@ def to_id(value):
         return None
     text = str(value).strip()
     return text or None
-
-
-def iso_utc(epoch):
-    """Epoch seconds -> 2026-09-17T14:27:44Z."""
-    seconds = to_int(epoch)
-    if not seconds:
-        return None
-    try:
-        return datetime.fromtimestamp(seconds, tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    except (OverflowError, OSError, ValueError):
-        return None
-
-
-def _dict(value):
-    return value if isinstance(value, dict) else {}
-
-
-def _list(value):
-    return value if isinstance(value, list) else []
 
 
 def _pick(raw, *keys):
@@ -814,7 +777,7 @@ def _stream_links(stream_data):
     if not raw:
         text = _dict(_dict(stream_data).get("pull_data")).get("stream_data")
         try:
-            raw = _dict(json.loads(text)) if isinstance(text, str) and text else {}
+            raw = _dict(fastjson.loads(text)) if isinstance(text, str) and text else {}
         except ValueError:
             raw = {}
     out = []
@@ -869,7 +832,7 @@ def search_live_room(row):
     """One live search hit: live_info.raw_data is the webcast room as a JSON string."""
     info = _dict(_dict(row).get("live_info"))
     try:
-        raw = _dict(json.loads(info.get("raw_data") or "{}"))
+        raw = _dict(fastjson.loads(info.get("raw_data") or "{}"))
     except ValueError:
         return None
     room_id = to_id(raw.get("id_str") or raw.get("id"))

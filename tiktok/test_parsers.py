@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import pytest  # noqa: E402
 
-from tiktok import ads, discovery, parsers as P, refs, schemas, search, shared, videos  # noqa: E402
+from tiktok import ads, discovery, parsers as P, refs, schemas, search, shared, users, videos  # noqa: E402
 from tiktok import fetch, signer  # noqa: E402
 from schema_fields import load_query  # noqa: E402
 
@@ -162,6 +162,113 @@ def test_status_and_country_order(monkeypatch):
     monkeypatch.setattr(fetch.config, "TIKTOK_DEFAULT_COUNTRY", "us")
     assert fetch.country_order(None, "de") == ("us", "de")
     assert fetch.country_order("DE", "de", "us") == ("de", "us")
+
+
+# ---- the profile lookup ------------------------------------------------------------------
+
+USER = {"username": "wazzycazzy", "sec_uid": None}
+SPENT = {"userInfo": {"user": {}, "stats": {}, "shareMeta": {}}}      # a spent exit's answer, for every username
+MISSING = {"statusCode": 10221, "status_code": 10221, "status_msg": "", "extra": {}, "log_pb": {}}
+
+
+def _page(status, info):
+    return {"webapp.user-detail": {"statusCode": status, "userInfo": info}}
+
+
+@pytest.fixture
+def lookup_env(monkeypatch):
+    """users.lookup against scripted upstream answers: `sessions` is what
+    each successive exit answers /api/user/detail with, `page` the profile
+    page's scope (or an exception). Returns the calls made."""
+    calls = {"api": 0, "closed": 0, "page": 0, "budget": None}
+
+    def install(sessions, page=None):
+        answers = list(sessions)
+        calls.update(api=0, closed=0, page=0, budget=None)
+
+        class Client:
+            country, answered, booted, spent = "de", True, True, {}
+
+            def close(self):
+                calls["closed"] += 1
+
+        def acquire(country, budget=None):
+            calls["budget"] = budget
+            return Client()
+
+        def api_once(client, path, params, **kwargs):
+            calls["api"] += 1
+            answer = answers.pop(0)
+            if isinstance(answer, Exception):
+                raise answer
+            return answer
+
+        def get_page(path, **kwargs):
+            calls["page"] += 1
+            assert path == "/@wazzycazzy"
+            if isinstance(page, Exception):
+                raise page
+            return page
+
+        monkeypatch.setattr(users, "_lookups", {})
+        monkeypatch.setattr(fetch, "_acquire", acquire)
+        monkeypatch.setattr(fetch, "_release", lambda client: None)
+        monkeypatch.setattr(fetch, "_api_once", api_once)
+        monkeypatch.setattr(users, "get_page", get_page)
+        return calls
+    return install
+
+
+def test_spent_exit_answer_is_recognised():
+    found = load("user_detail.json")
+    assert users._turned_away(SPENT) and users._turned_away({})
+    assert not users._turned_away(found) and not users._turned_away(MISSING)
+
+
+def test_lookup_drops_a_spent_exit_and_asks_the_next(lookup_env):
+    # prod 2026-11-18: this answer was read as "user not found" and the
+    # session went back to the pool, so every lookup was a 404 for minutes
+    found = load("user_detail.json")
+    calls = lookup_env([SPENT, found])
+    assert users.lookup(USER) is found["userInfo"]
+    assert calls == {"api": 2, "closed": 1, "page": 0, "budget": ("detail", users.DETAIL_CALLS_PER_EXIT)}
+
+
+def test_lookup_reads_the_page_when_every_exit_is_spent(lookup_env):
+    info = load("user_detail.json")["userInfo"]
+    calls = lookup_env([SPENT, SPENT], page=_page(0, info))
+    assert users.lookup(USER) is info
+    assert calls["closed"] == 2 and calls["page"] == 1
+    lookup_env([SPENT, SPENT], page=fetch.TikTokBlocked("no page data"))
+    with pytest.raises(fetch.TikTokBlocked):                              # a 502 to retry, never a 404
+        users.lookup(USER)
+    lookup_env([SPENT, SPENT], page={"webapp.app-context": {}})
+    with pytest.raises(fetch.TikTokUpstreamError) as e:
+        users.lookup(USER)
+    assert not isinstance(e.value, fetch.TikTokNotFound)
+    lookup_env([SPENT, SPENT])
+    with pytest.raises(fetch.TikTokBlocked):                              # a secUid has no page to ask
+        users.lookup({"username": None, "sec_uid": "MS4wLjABAAAA" + "x" * 60})
+
+
+def test_lookup_confirms_a_missing_user_on_the_page(lookup_env):
+    info = load("user_detail.json")["userInfo"]
+    calls = lookup_env([MISSING], page=_page(0, info))                    # hidden from EU viewers only
+    assert users.lookup(USER) is info and calls["page"] == 1 and calls["closed"] == 0
+    for page in (_page(10221, None), _page(0, {"user": {}}), fetch.TikTokBlocked("no page data")):
+        lookup_env([MISSING], page=page)
+        with pytest.raises(fetch.TikTokNotFound):
+            users.lookup(USER)
+    calls = lookup_env([MISSING])
+    with pytest.raises(fetch.TikTokNotFound):
+        users.lookup({"username": None, "sec_uid": "MS4wLjABAAAA" + "x" * 60})
+    assert calls["page"] == 0
+
+
+def test_lookup_page_fallback_names_a_missing_user(lookup_env):
+    lookup_env([fetch.TikTokUpstreamError("HTTP 500"), fetch.TikTokUpstreamError("HTTP 500")], page=_page(10221, None))
+    with pytest.raises(fetch.TikTokNotFound):
+        users.lookup(USER)
 
 
 def test_universal_data():

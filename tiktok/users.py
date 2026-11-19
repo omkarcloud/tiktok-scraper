@@ -9,7 +9,15 @@ pays for it once).
 Where each call is served (probed 2026-10-05, see fetch.py):
   * /api/user/detail  answers on EU exits only -> looked up there, with the
     profile PAGE on the default exit as the fallback (username refs only;
-    the page cannot be addressed by secUid).
+    the page cannot be addressed by secUid). Two answers of it are not
+    taken at their word (measured 2026-11-19, lookup()):
+      - one exit serves 58 to 85 lookups, then every answer is a 200 with
+        an EMPTY profile and no status code, for every username, existing
+        or not (a new cookie jar on that exit gets empty bodies; a new exit
+        answers at once) -> the session is dropped as blocked, and retired
+        before that after DETAIL_CALLS_PER_EXIT lookups;
+      - "no such user" (10221) for an account the US site shows (hidden
+        from EU viewers) -> the profile page decides before a 404.
   * /api/post/item_list (signed, 35 a page, latest / popular / oldest) is
     throttled per exit IP, so each session serves a small budget of calls.
     When it still comes back empty, `latest` falls back to the unsigned
@@ -39,6 +47,7 @@ LIST_PAGE = 30
 SORTS = {"latest": 0, "popular": 1, "oldest": 2}
 FOLLOW_SCENES = {"followers": 67, "following": 21}
 LIST_HIDDEN = 10222      # the account hides this list (profile setting)
+DETAIL_CALLS_PER_EXIT = 40   # /api/user/detail lookups one exit serves before it is retired for them (it turns away after 58-85)
 
 
 def _describe(user):
@@ -57,6 +66,42 @@ def _remember(info):
             _lookups[("sec_uid", raw["secUid"])] = (expires, info)
 
 
+def _has_account(info):
+    return isinstance(info, dict) and bool((info.get("user") or {}).get("secUid"))
+
+
+def _turned_away(payload):
+    """An exit past its lookup allowance still answers 200: an empty profile
+    and no status code at all ({"userInfo": {"user": {}, "stats": {},
+    "shareMeta": {}}}), whoever is asked for. A real "no such user" carries
+    its status code."""
+    return ("statusCode" not in payload and "status_code" not in payload
+            and not _has_account(payload.get("userInfo")))
+
+
+def _lookup_on_page(username, label, said_missing):
+    """userInfo from the profile page on the default exit. `said_missing`:
+    the EU API answered "no such user", so a page that cannot be read
+    leaves that answer standing."""
+    try:
+        scope = get_page(f"/@{username}")
+    except TikTokUpstreamError:
+        if said_missing:
+            raise TikTokNotFound(f"{label} not found")
+        raise
+    detail = scope.get("webapp.user-detail")
+    detail = detail if isinstance(detail, dict) else {}
+    info = detail.get("userInfo")
+    if _has_account(info):
+        return info
+    status = detail.get("statusCode")
+    if said_missing or status in shared.USER_NOT_FOUND:
+        raise TikTokNotFound(f"{label} not found")
+    # a page without the account and without a "no such user" code is not
+    # an answer: a 404 here told callers that existing accounts were gone
+    raise TikTokUpstreamError(f"{label}: the profile page came without the account (status {status})")
+
+
 def lookup(user):
     """The raw webapp userInfo ({user, stats, statsV2}) for a resolved ref;
     TikTokNotFound if the account does not exist."""
@@ -67,22 +112,21 @@ def lookup(user):
             return hit[1]
     params = {"uniqueId": user.get("username") or "", "secUid": user.get("sec_uid") or ""}
     label = f"user {_describe(user)}"
+    info, said_missing = None, False
     try:
         payload = api("/api/user/detail/", params, countries=(eu_country(),),
+                      budget=("detail", DETAIL_CALLS_PER_EXIT), refused=_turned_away,
                       not_found=shared.USER_NOT_FOUND, label=label)
         info = payload.get("userInfo")
     except TikTokNotFound:
-        raise
+        said_missing = True
     except TikTokUpstreamError:
         if not user.get("username"):
             raise
-        scope = get_page(f"/@{user['username']}")
-        detail = scope.get("webapp.user-detail") or {}
-        if detail.get("statusCode") in shared.USER_NOT_FOUND:
+    if not _has_account(info):
+        if not user.get("username"):        # the page cannot be addressed by secUid
             raise TikTokNotFound(f"{label} not found")
-        info = detail.get("userInfo")
-    if not isinstance(info, dict) or not (info.get("user") or {}).get("secUid"):
-        raise TikTokNotFound(f"{label} not found")
+        info = _lookup_on_page(user["username"], label, said_missing)
     _remember(info)
     return info
 

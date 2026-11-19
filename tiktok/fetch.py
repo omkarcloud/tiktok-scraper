@@ -344,7 +344,7 @@ def _api_once(client, path, params, *, signed, base, host, referer):
 
 
 def api(path, params, *, country=None, countries=None, signed=True, boot=False, base=True, host=WWW,
-        budget=None, referer=None, not_found=(), bad_request=(), ok=(0,), label=None):
+        budget=None, referer=None, not_found=(), bad_request=(), ok=(0,), label=None, refused=None):
     """One web API call -> the parsed JSON dict.
 
     countries    exit countries to try in order (default: `country` or the
@@ -358,6 +358,10 @@ def api(path, params, *, country=None, countries=None, signed=True, boot=False, 
     bad_request  upstream status codes that mean the params were refused
     ok           status codes returned to the caller as-is; any other code is
                  an upstream error naming the code
+    refused      payload -> True when the answer is the endpoint's own way of
+                 turning a session away (a 200 that is not an answer); the
+                 session is dropped and the next exit asked, as for an empty
+                 body
     """
     order = countries or country_order(country)
     what = label or path
@@ -374,6 +378,8 @@ def api(path, params, *, country=None, countries=None, signed=True, boot=False, 
                 for attempt in range(tries):
                     try:
                         payload = _api_once(client, path, params, signed=signed, base=base, host=host, referer=referer)
+                        if refused is not None and refused(payload):
+                            raise TikTokBlocked(f"{path} turned the session away")
                         break
                     except TikTokBlocked as e:
                         last = e

@@ -12,7 +12,9 @@ ONE param per input (tripadvisor QueryOrIdField convention, never a sibling
   music, playlist, collection, place, effect
               the numeric id or the entity's tiktok.com link
 """
-from marshmallow import validate
+import re
+
+from marshmallow import ValidationError, validate
 
 from schema_fields import (BaseSchema, ChoiceField, CountryCodeField, DateField, LanguageCodeField, QueryField,
                            RefField, StrippedString)
@@ -51,17 +53,54 @@ class EffectRefField(RefField):
     resolver = staticmethod(refs.resolve_effect)
 
 
+# StrippedString hands an empty optional value (`cursor=`, `query=`) to the
+# validators as None, and marshmallow's own Regexp / Length crash on it
+# (a bottle 500 before any TikTok call). These two let None through.
+
+def _matches(pattern, error):
+    regex = re.compile(pattern)
+
+    def check(value):
+        if value is not None and not regex.match(value):
+            raise ValidationError(error)
+    return check
+
+
+def _max_length(n):
+    def check(value):
+        if value is not None and len(value) > n:
+            raise ValidationError(f"Longer than maximum length {n}.")
+    return check
+
+
 class CursorField(StrippedString):
-    """Opaque next_cursor from the previous page (absent = first page).
-    `pattern` is the shape the endpoint's cursors have, so a mangled value
-    is a 400 here instead of a silent first page upstream."""
+    """Opaque next_cursor from the previous page (absent or empty = first
+    page). `pattern` is the shape the endpoint's cursors have, so a mangled
+    value is a 400 here instead of a silent first page upstream."""
 
     def __init__(self, pattern=r"\d{1,20}", **kwargs):
         kwargs.setdefault("required", False)
         kwargs.setdefault("load_default", None)
-        kwargs.setdefault("validate", validate.Regexp(
-            rf"^(?:{pattern})$", error="Must be the next_cursor value of the previous page, unchanged."))
+        kwargs.setdefault("validate", _matches(
+            rf"^(?:{pattern})$", "Must be the next_cursor value of the previous page, unchanged."))
         super().__init__(**kwargs)
+
+
+class DefaultedChoiceField(ChoiceField):
+    """ChoiceField whose empty value (`sort=`) gives load_default, not None
+    (None would reach the endpoint in place of its default)."""
+
+    def _deserialize(self, value, attr, data, **kwargs):
+        value = super()._deserialize(value, attr, data, **kwargs)
+        return self.load_default if value is None else value
+
+
+class DefaultedCountryField(CountryCodeField):
+    """CountryCodeField whose empty value gives load_default, not None."""
+
+    def _deserialize(self, value, attr, data, **kwargs):
+        value = super()._deserialize(value, attr, data, **kwargs)
+        return self.load_default if value is None else value
 
 
 class ExitCountryField(CountryCodeField):
@@ -98,7 +137,7 @@ class UserVideosSchema(UserPageSchema):
 
 
 class UserPostsSchema(UserVideosSchema):
-    sort = ChoiceField(list(users.SORTS), load_default="latest")
+    sort = DefaultedChoiceField(list(users.SORTS), load_default="latest")
 
 
 # ---- videos ----------------------------------------------------------------------------
@@ -130,7 +169,7 @@ class SearchSchema(BaseSchema):
 
 
 class VideoSearchSchema(SearchSchema):
-    sort = ChoiceField(list(search.SORTS), load_default="relevance")
+    sort = DefaultedChoiceField(list(search.SORTS), load_default="relevance")
     published = ChoiceField(list(search.PUBLISHED))
 
 
@@ -197,7 +236,7 @@ class TrendingSchema(BaseSchema):
 
 
 class ExploreSchema(BaseSchema):
-    category = ChoiceField(list(discovery.EXPLORE_CATEGORIES), load_default="all")
+    category = DefaultedChoiceField(list(discovery.EXPLORE_CATEGORIES), load_default="all")
     country = ExitCountryField()
 
 
@@ -211,9 +250,9 @@ class AdIdField(StrippedString):
 
 
 class AdsSearchSchema(BaseSchema):
-    query = StrippedString(validate=validate.Length(max=200), load_default=None,
+    query = StrippedString(validate=_max_length(200), load_default=None,
                            metadata={"description": "keyword in the ad (pass this, advertiser, or neither for the newest ads)"})
-    advertiser = StrippedString(validate=validate.Length(max=200), load_default=None,
+    advertiser = StrippedString(validate=_max_length(200), load_default=None,
                                 metadata={"description": "advertiser name exactly as /tiktok/ads/advertisers returns it"})
     country = CountryCodeField(metadata={"description": "a country from /tiktok/ads/countries (default: all of them)"})
     start_date = DateField(bound="past")
@@ -230,11 +269,11 @@ class AdvertiserSearchSchema(BaseSchema):
 
 
 class TopAdsSchema(BaseSchema):
-    country = CountryCodeField(load_default="US")
-    period = ChoiceField({str(days): days for days in ads.TOP_PERIODS}, load_default=30)
-    sort = ChoiceField(list(ads.TOP_SORTS), load_default="for_you")
-    industry = StrippedString(validate=validate.Regexp(r"^\d{8,14}$", error="Must be an industry id from /tiktok/ads/top/filters."),
+    country = DefaultedCountryField(load_default="US")
+    period = DefaultedChoiceField({str(days): days for days in ads.TOP_PERIODS}, load_default=30)
+    sort = DefaultedChoiceField(list(ads.TOP_SORTS), load_default="for_you")
+    industry = StrippedString(validate=_matches(r"^\d{8,14}$", "Must be an industry id from /tiktok/ads/top/filters."),
                               load_default=None)
     objective = ChoiceField(list(ads.TOP_OBJECTIVES))
     language = LanguageCodeField()
-    query = StrippedString(validate=validate.Length(max=100), load_default=None)
+    query = StrippedString(validate=_max_length(100), load_default=None)
